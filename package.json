@@ -15,11 +15,12 @@
     "react-dom": "^16.10.2"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.1.1",
     "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.6.5",
     "babel-eslint": "^10.0.3",
     "cssnano": "^3.10.0",
-    "date-fns": "^2.4.1",
+    "date-fns": "^2.5.1",
     "eslint": "^6.5.1",
     "eslint-config-react-app": "5.0.2",
     "eslint-loader": "^3.0.2",

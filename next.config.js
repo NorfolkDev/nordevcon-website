@@ -1,6 +1,9 @@
 const withCSS = require("@zeit/next-css");
 const withOffline = require("next-offline");
 const withPurgeCSS = require("next-purgecss");
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true"
+});
 
 class TailwindExtractor {
   static extract(content) {
@@ -68,4 +71,6 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(withCSS(withPurgeCSS(nextConfig)));
+module.exports = withBundleAnalyzer(
+  withOffline(withCSS(withPurgeCSS(nextConfig)))
+);
