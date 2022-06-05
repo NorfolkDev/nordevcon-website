@@ -7,7 +7,7 @@ function SharePage({ speakers, schedule }) {
   const { query } = useRouter();
   const wishlist = [query.wishlist ?? []].flat();
   const talks = schedule
-    .filter(talk => wishlist.includes(talk.id))
+    .filter(talk => (wishlist.includes(talk.id) || talk.fields.Info))
     .reduce(groupByStartDate, {});
 
   return (
