@@ -17,7 +17,7 @@ export default function Hero(/* { speakers } */) {
       </div>
 
       <div className="absolute top-0 w-full h-full z-1">
-        <div className="section pt-8 lg:pt-36">
+        <div className="pt-8 section lg:pt-36">
           <img
             src="/static/images/nordevcon-logo.png"
             height="56px"
@@ -26,7 +26,7 @@ export default function Hero(/* { speakers } */) {
             className="mb-8"
           />
 
-          <h1 className="headline text-indigo-100">
+          <h1 className="text-indigo-100 headline">
             <span className="hidden">
               nor(DEV):con
             </span>
@@ -35,9 +35,9 @@ export default function Hero(/* { speakers } */) {
             </span>
           </h1>
 
-          <p className="mt-24 text-purple-300 font-black text-2xl lg:text-4xl">On the 16<sup>th</sup> &amp; 17<sup>th</sup> June 2022</p>
+          <p className="mt-24 text-2xl font-black text-purple-300 lg:text-4xl">On the 16<sup>th</sup> &amp; 17<sup>th</sup> June 2022</p>
 
-          <div className="mt-12 py-2 lg:py-8">
+          <div className="py-2 mt-12 lg:py-8">
               <a
                 href="https://ti.to/norfolkdevelopers/nordevcon-22"
                 rel="external"
@@ -53,17 +53,17 @@ export default function Hero(/* { speakers } */) {
 }
 
 function Hex() {
-  const [shouldHightlight, setShouldHighlight] = useState(false)
+  // const [shouldHightlight, setShouldHighlight] = useState(false)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      startTransition(() => {
-        setShouldHighlight(Math.random() > 0.99)
-      })
-    }, 500);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     startTransition(() => {
+  //       setShouldHighlight(Math.random() > 0.99)
+  //     })
+  //   }, 500);
 
-    return () => clearInterval(interval)
-  }, [])
+  //   return () => clearInterval(interval)
+  // }, [])
 
-  return <div className={classNames("hex-grid__content", { highlight: shouldHightlight })}></div>
+  // return <div className={classNames("hex-grid__content", { highlight: shouldHightlight })}></div>
 }
