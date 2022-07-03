@@ -3,6 +3,7 @@ import { useEffect, useState, startTransition } from "react";
 
 const hexArray = Array.from({length: 8 * 12}).fill(null);
 
+// a comment
 export default function Hero(/* { speakers } */) {
   return (
     <section className="relative" id="hero">
