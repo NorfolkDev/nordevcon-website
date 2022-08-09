@@ -44,6 +44,11 @@ function Layout({ children, title }) {
       </Head>
 
       <main className="min-h-screen">
+        <div className="fixed top-0 z-50 min-w-full p-4 font-extrabold text-yellow-900 bg-yellow-600">
+          <p>
+            This is an archive of a previous conference - thanks for checking it out! You can see our current conference at <a className="underline" href="https://nordevcon.com">nordevcon.com</a>
+          </p>
+        </div>
         {children}
         <Footer />
       </main>
