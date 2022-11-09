@@ -6,6 +6,7 @@ import ChatBubbleLeftRightIcon from "@heroicons/react/24/outline/ChatBubbleLeftR
 import ChartBarSquareIcon from "@heroicons/react/24/outline/ChartBarSquareIcon";
 import CircleStackIcon from "@heroicons/react/24/outline/CircleStackIcon";
 import CommandLineIcon from "@heroicons/react/24/outline/CommandLineIcon";
+import { GiSadCrab } from 'react-icons/gi'
 import City from "./svg/City";
 import Logo from "./svg/Logo";
 
@@ -19,6 +20,7 @@ const Icons = [
   ChartBarSquareIcon,
   CircleStackIcon,
   CommandLineIcon,
+  GiSadCrab,
 ];
 
 function random(max, min = 0) {
@@ -30,13 +32,13 @@ function Icon() {
   let hue = random(360);
   let time = random(5000, 2000);
   let delay = random(720, 30);
-
+  
   let start = [random(100), random(60, 40)];
   let end = [
     random(start[0] + 5, start[0] - 5),
     random(start[1] - 40, start[1] - 20),
   ];
-
+  
   let IconComponent = Icons[random(Icons.length - 1, 0)];
 
   return (
