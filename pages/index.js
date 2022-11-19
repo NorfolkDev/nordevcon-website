@@ -1,4 +1,3 @@
-import * as airtable from "./api/airtable";
 import config from "../config.json";
 import Layout from "../layouts/default";
 import Hero from "../components/Hero";
@@ -24,13 +23,22 @@ export default function Home({ schedule }) {
   );
 }
 
-export async function getStaticProps() {
-  const [schedule] = await Promise.all([airtable.getSchedule()]);
+const apiKey = process.env.NEXT_PUBLIC_AIRTABLE_API_KEY;
+const apiBase = "https://api.airtable.com/v0/appsFsySYgjKqDoLu";
+
+export async function getServerSideProps() {
+  const res = await fetch(`${apiBase}/Schedule`, {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+  });
+
+  const json = await res.json();
 
   return {
     props: {
-      schedule,
+      schedule: json.records,
     },
-    revalidate: 60,
   };
 }
