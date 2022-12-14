@@ -13,6 +13,7 @@ export default function SchedulePage({ schedule, query }) {
 }
 
 export async function getServerSideProps({ query }) {
+  // Cache isn't available locally, only in a Cloudflare Workers environment
   const cache = typeof caches !== "undefined" ? caches?.default : undefined;
   const schedule = await airtable.getSchedule(cache);
 
