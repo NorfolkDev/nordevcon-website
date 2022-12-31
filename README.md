@@ -1,3 +1,7 @@
+> **Note**
+>
+> This repo is archived, the website has now been rebuilt and lives over at https://github.com/NorfolkDev/nordevcon-website-remixed
+
 # The Norfolk Developer's Website
 
 The website data for speakers and schedule is sourced from an Airtable spreadsheet via the Airtable API.
