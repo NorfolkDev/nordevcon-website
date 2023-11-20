@@ -39,7 +39,7 @@
     </head>
 
     <body class="min-h-[100dvh]">
-        <main class="min-h-full">
+        <main>
             @yield("content")
         </main>
 
