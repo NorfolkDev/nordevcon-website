@@ -5,6 +5,6 @@
 @section("content")
     <x-hero />
 
-    <h1 class="text-2xl font-bold">Hello World</h1>
-    <p class="font-condensed">Testing codensed font</p>
+    <x-sessions />
+    <x-speakers />
 @endsection
