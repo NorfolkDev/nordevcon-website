@@ -2,13 +2,14 @@
 
 namespace App\Services;
 
+use App\Data\Sessions\Schedule;
 use Error;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 
 class Sessionize
 {
-    static function getSessions(): Collection
+    static function getSessions(): Schedule
     {
         $response = Http::get("https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart");
 
@@ -16,7 +17,7 @@ class Sessionize
             throw new Error("Error getting sessions from Sessionize");
         }
 
-        return collect($response->json());
+        return Schedule::fromSessionize($response->json());
     }
 
     static function getSpeakers(): Collection
