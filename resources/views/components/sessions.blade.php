@@ -1,6 +1,5 @@
 <div>
     <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
-    @dump($schedule)
     <ol class="grid lg:grid-cols-[auto_repeat(3,_1fr)]">
         @foreach ($schedule->days as $day)
             @foreach ($day->timeSlots as $timeSlot)
