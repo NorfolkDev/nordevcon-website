@@ -11,8 +11,8 @@ class Sessions extends Component
 {
     public function render(): View|Closure|string
     {
-        $sessions = Sessionize::getSessions();
+        $schedule = Sessionize::getSessions();
 
-        return view('components.sessions', compact("sessions"));
+        return view('components.sessions', compact("schedule"));
     }
 }
