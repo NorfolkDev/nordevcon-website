@@ -1,21 +1,23 @@
 <div>
     <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
-    @foreach ($sessions as $day)
-        <h3>{{ $day["date"] }}</h3>
+    @dump($schedule)
+    <ol class="grid lg:grid-cols-[auto_repeat(3,_1fr)]">
+        @foreach ($schedule->days as $day)
+            @foreach ($day->timeSlots as $timeSlot)
+                <li>{{ $timeSlot->time }}</li>
 
-        <ol class="grid grid-cols-3">
-            @foreach ($day["timeSlots"] as $timeSlot)
-                @foreach ($timeSlot["rooms"] as $session)
+                @foreach ($timeSlot->sessions as $session)
                     <li
                         @class([
-                            "col-span-3" => $session["session"]["isPlenumSession"],
-                            "py-6" => ! $session["session"]["isPlenumSession"],
+                            "lg:col-span-3" => $session->isPlenumSession,
+                            "lg:row-span-2" => $session->duration === 90,
+                            "py-6" => ! $session->isPlenumSession,
                             "border-b border-slate-400 p-2",
                         ])
                     >
-                        {{ $session["session"]["title"] }}
+                        {{ $session->title }}
                         <dialog>
-                            {{ $session["session"]["title"] }}
+                            {{ $session->description }}
                             <form>
                                 <button
                                     type="submit"
@@ -31,6 +33,6 @@
                     </li>
                 @endforeach
             @endforeach
-        </ol>
-    @endforeach
+        @endforeach
+    </ol>
 </div>
