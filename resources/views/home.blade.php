@@ -7,5 +7,6 @@
 
     <x-introduction />
     <x-sponsors />
+    <x-discord />
     <x-newsletter />
 @endsection
