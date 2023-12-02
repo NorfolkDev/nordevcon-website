@@ -1,3 +1,5 @@
+import.meta.glob(["../img/**"]);
+
 const dialogs = Array.from(document.querySelectorAll("button[dialog]"));
 
 console.log(dialogs);
