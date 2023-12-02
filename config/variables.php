@@ -23,4 +23,9 @@ return [
 
     'brand_color' => '#44337a',
 
+    'attendees' => '~400',
+
+    'venue' => 'Kings Centre',
+
+    'location' => 'Norwich',
 ];
