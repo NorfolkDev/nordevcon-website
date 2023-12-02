@@ -21,39 +21,39 @@
         </div>
     </div>
 
-    <div class="px-4 md:px-16">
+    <div class="px-4 opacity-90 md:px-16">
         <dl
-            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-2xl text-white md:flex-row md:divide-x-2"
+            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-3xl text-white md:flex-row md:divide-x-2"
         >
-            <div class="py-2 md:px-4">
+            <div class="py-2 md:px-6">
                 <dt
-                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
                     Speakers
                 </dt>
                 <dt>{{ $speakerCount }}</dt>
             </div>
-            <div class="py-2 md:px-4">
+            <div class="py-2 md:px-6">
                 <dt
-                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
                     People Attending
                 </dt>
                 <dt>{{ config("variables.attendees") }}</dt>
             </div>
 
-            <div class="py-2 md:px-4">
+            <div class="py-2 md:px-6">
                 <dt
-                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
                     Venue
                 </dt>
                 <dt>{{ config("variables.venue") }}</dt>
             </div>
 
-            <div class="py-2 md:px-4">
+            <div class="py-2 md:px-6">
                 <dt
-                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
                     Location
                 </dt>
@@ -64,7 +64,7 @@
 </section>
 
 <svg
-    class="sticky top-[-3.8vw] z-40"
+    class="sticky top-[-3.8vw] z-40 -mt-1"
     viewBox="0 0 1584 68"
     xmlns="http://www.w3.org/2000/svg"
 >
@@ -75,7 +75,7 @@
     />
 </svg>
 <svg
-    class="sticky top-[-4.3vw] z-30"
+    class="sticky top-[-4.3vw] z-30 -mt-1"
     viewBox="0 0 1584 120"
     xmlns="http://www.w3.org/2000/svg"
 >
@@ -86,7 +86,7 @@
     />
 </svg>
 <svg
-    class="sticky top-[-3vw] z-20"
+    class="sticky top-[-3vw] z-20 -mt-1"
     viewBox="0 0 1584 154"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
         fill="#AC4B74"
     />
 </svg>
-<div class="sticky top-0 z-10 -mb-16">
+<div class="sticky top-0 z-10 -mb-16 -mt-1">
     <svg viewBox="0 0 1584 181" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M0 141.509L33.088 143.155C66.352 144.8 132.528 148.091 198.528 151.135C264.528 154.097 330.352 156.894 396.352 160.596C462.352 164.299 528.528 168.906 594.528 169.482C660.528 170.058 726.352 166.438 792.352 158.21C858.352 149.983 924.528 137.149 990.528 132.459C1056.53 127.77 1122.35 131.39 1188.35 139.452C1254.35 147.515 1320.53 164.349 1386.53 172C1452.53 179.651 1449.26 179.684 1482 181L1584 181V0L1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 141.509Z"
