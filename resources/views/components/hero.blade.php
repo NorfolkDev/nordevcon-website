@@ -20,6 +20,47 @@
             </p>
         </div>
     </div>
+
+    <div class="px-4 md:px-16">
+        <dl
+            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-2xl text-white md:flex-row md:divide-x-2"
+        >
+            <div class="py-2 md:px-4">
+                <dt
+                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                >
+                    Speakers
+                </dt>
+                <dt>{{ $speakerCount }}</dt>
+            </div>
+            <div class="py-2 md:px-4">
+                <dt
+                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                >
+                    People Attending
+                </dt>
+                <dt>{{ config("variables.attendees") }}</dt>
+            </div>
+
+            <div class="py-2 md:px-4">
+                <dt
+                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                >
+                    Venue
+                </dt>
+                <dt>{{ config("variables.venue") }}</dt>
+            </div>
+
+            <div class="py-2 md:px-4">
+                <dt
+                    class="mb-1 font-condensed font-condensed text-sm font-black font-black font-black uppercase tracking-wide text-wave-orange"
+                >
+                    Location
+                </dt>
+                <dt>{{ config("variables.location") }}</dt>
+            </div>
+        </dl>
+    </div>
 </section>
 
 <svg
