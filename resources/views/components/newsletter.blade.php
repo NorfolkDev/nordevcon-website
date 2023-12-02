@@ -1,9 +1,9 @@
-<div class="py-16 sm:py-24">
+<div class="sm:py-24">
     <div class="relative sm:py-16">
         <div aria-hidden="true" class="hidden sm:block">
             <div
                 class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-wave-pink"
-            />
+            ></div>
             <svg
                 class="absolute left-1/2 top-8 -ml-3 text-wave-orange"
                 width="404"
@@ -36,9 +36,9 @@
                 />
             </svg>
         </div>
-        <div class="mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="mx-auto sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
             <div
-                class="relative overflow-hidden rounded-lg bg-slate-900 px-6 py-10 shadow-xl sm:px-12 sm:py-20"
+                class="relative overflow-hidden bg-slate-900 px-6 py-10 shadow-xl sm:rounded-lg sm:px-12 sm:py-20"
             >
                 <div
                     aria-hidden="true"
