@@ -7,4 +7,5 @@
 
     <x-introduction />
     <x-sponsors />
+    <x-newsletter />
 @endsection
