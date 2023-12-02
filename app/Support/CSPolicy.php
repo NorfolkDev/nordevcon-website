@@ -12,5 +12,6 @@ class CSPolicy extends Basic
         parent::configure();
 
         $this->addDirective(Directive::IMG, 'sessionize.com cache.sessionize.com');
+        $this->addDirective(Directive::IMG, 'norfolkdevelopers.s3.eu-west-2.amazonaws.com');
     }
 }

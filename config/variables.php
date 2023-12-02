@@ -21,6 +21,8 @@ return [
 
     'ticket_url' => 'https://ti.to/norfolkdevelopers/nordevcon-24',
 
+    'sponsor_apply_url' => 'https://airtable.com/shr80UEwZwDxM5GWF',
+
     'brand_color' => '#44337a',
 
     'attendees' => '~400',
