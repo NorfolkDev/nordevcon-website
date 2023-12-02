@@ -5,5 +5,6 @@
 @section("content")
     <x-hero />
 
+    <x-introduction />
     <x-sponsors />
 @endsection
