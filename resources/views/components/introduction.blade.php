@@ -12,25 +12,25 @@
             >
                 <div class="lg:pr-16">
                     <h2
-                        class="mb-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl"
+                        class="mb-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
                     >
-                        Two days of talks on mobile, web, game, data science,
-                        <span class="italic">humans</span>
-                        , startups &amp; more.
+                        Knowledge, inspiration, and networking opportunities
+                        come together.
                     </h2>
-                    <p class="mb-2 text-2xl text-slate-900">
-                        Topics to interest and enthrall all; in a welcoming and
-                        inclusive atmosphere. Friendships to kindle, friends to
-                        meet, & connections to make!
+                    <p class="mb-2 font-condensed text-2xl text-slate-900">
+                        Our three tracks offer a broad range of sessions
+                        suitable for various interests and expertise levels,
+                        making it an inclusive experience for seasoned
+                        professionals, budding entrepreneurs, and tech
+                        enthusiasts alike.
                     </p>
 
-                    <p class="text-xl text-slate-500">
-                        We'll gather in Norwich to learn, discuss, and network
-                        with an eclectic bunch of the best of East Anglia's tech
-                        scene, joined by a group of international conference
-                        veterans. We're bringing 35 sessions to The Kings'
-                        Centre, kicking off on the 23rd February 2023, and
-                        closing 24th February 2023
+                    <p class="font-condensed text-xl text-slate-500">
+                        Get ready for a laid-back, friendly tech experience
+                        that's all about good vibes and learning together. Dive
+                        into the latest trends, advancements, and challenges in
+                        technology, gaining valuable insights to propel your
+                        career and business forward.
                     </p>
                 </div>
             </div>
