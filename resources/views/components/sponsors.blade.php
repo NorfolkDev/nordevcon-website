@@ -51,7 +51,7 @@
                 </ol>
             </li>
             <li>
-                <ol class="grid auto-rows-fr gap-6 lg:grid-cols-2">
+                <ol class="grid gap-6 lg:auto-rows-fr lg:grid-cols-2">
                     @foreach ($sponsors->where("package", "Partner") as $sponsor)
                         <li class="rounded-md bg-indigo-100 px-8 py-8">
                             <label
