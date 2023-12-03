@@ -1,0 +1,80 @@
+<footer class="bg-slate-900 py-16">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 lg:gap-8">
+        <div
+            class="flex flex-col items-center justify-between gap-4 px-4 text-indigo-100 lg:flex-row lg:px-8"
+        >
+            <div class="w-full max-w-xs">
+                <x-logo />
+            </div>
+
+            <div>
+                <p class="text-base md:mt-0">
+                    Copyright © 2022 Norfolk Developers, Ltd. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col gap-4 px-4 font-condensed text-indigo-100/50 lg:flex-row lg:gap-8 lg:px-8"
+        >
+            <ol>
+                <li>
+                    <a class="underline" href="https://2020.nordevcon.com">
+                        Visit the nor(DEV): con 2020 website
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://2022.nordevcon.com">
+                        Visit the nor(DEV): con 2022 website
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://2023.nordevcon.com">
+                        Visit the nor(DEV): con 2023 website
+                    </a>
+                </li>
+            </ol>
+
+            <ol>
+                <li>
+                    <a class="underline" href="https://nor.dev/twitter">
+                        Follow us on Twitter
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="underline"
+                        href="https://www.linkedin.com/company/norfolk-developers-ltd-/"
+                    >
+                        Connect with us on LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://nor.dev/youtube">
+                        Subscribe on YouTube
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://nor.dev/discord">
+                        Join our Discord
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://nor.dev/meetup">
+                        Join our Meetup Community
+                    </a>
+                </li>
+            </ol>
+
+            <ol>
+                <li>
+                    <a class="underline" href="#">Code of Conduct</a>
+                </li>
+                <li>
+                    <a class="underline" href="#">Sponsor Us</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</footer>
