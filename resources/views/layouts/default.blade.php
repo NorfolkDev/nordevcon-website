@@ -38,7 +38,7 @@
         @vite("resources/css/app.css")
     </head>
 
-    <body class="min-h-[100dvh]">
+    <body class="min-h-[100dvh] bg-gray-100">
         <main>
             @yield("content")
 
