@@ -6,6 +6,7 @@
     <x-hero />
 
     <x-introduction />
+    <x-expect />
     <x-sponsors />
     <x-discord />
     <x-newsletter />
