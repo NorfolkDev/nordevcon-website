@@ -12,7 +12,7 @@
             >
                 <div class="lg:pr-16">
                     <h2
-                        class="mb-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+                        class="mb-8 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl"
                     >
                         Knowledge, inspiration, and networking opportunities
                         come together.
