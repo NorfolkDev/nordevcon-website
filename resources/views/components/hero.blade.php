@@ -1,31 +1,30 @@
 <section
-    class="flex min-h-[70dvh] flex-col justify-between overflow-hidden bg-slate-900"
+    class="relative flex min-h-[70dvh] flex-col justify-between bg-slate-900"
 >
     <div
-        class="pointer-events-none flex select-none flex-col gap-8 p-4 py-16 md:mb-16 md:p-16 md:pt-32"
+        class="sticky top-0 flex justify-between gap-4 p-8 px-16 pb-32 lg:gap-8 lg:pl-32"
     >
-        <div class="max-w-sm text-white md:max-w-lg">
-            <x-logo />
-        </div>
         <div>
+            <img
+                width="189"
+                height="189"
+                src="{{ Vite::asset("resources/img/poster-moon.png") }}"
+            />
+        </div>
+        <div class="align-right flex flex-col justify-end text-white">
+            <x-logo class="w-full max-w-sm lg:max-w-lg" />
             <p
                 class="font-display bg-move inline bg-gradient-to-r from-wave-purple via-wave-pink to-wave-orange bg-clip-text text-5xl font-extrabold leading-normal tracking-tight text-transparent"
             >
                 {{ config("variables.title") }}
             </p>
         </div>
-        <div>
-            <p class="text-4xl font-extrabold tracking-tight text-white">
-                {{ config("variables.date") }}
-            </p>
-        </div>
     </div>
-
-    <div class="px-4 opacity-90 md:px-16">
+    <div class="hidden px-4 opacity-90 lg:block lg:px-16">
         <dl
-            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-3xl text-white md:flex-row md:divide-x-2"
+            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-3xl text-white lg:flex-row lg:divide-x-2"
         >
-            <div class="py-2 md:px-6">
+            <div class="py-2 lg:px-6">
                 <dt
                     class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
@@ -33,7 +32,7 @@
                 </dt>
                 <dt>{{ $speakerCount }}</dt>
             </div>
-            <div class="py-2 md:px-6">
+            <div class="py-2 lg:px-6">
                 <dt
                     class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
@@ -42,7 +41,7 @@
                 <dt>{{ config("variables.attendees") }}</dt>
             </div>
 
-            <div class="py-2 md:px-6">
+            <div class="py-2 lg:px-6">
                 <dt
                     class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
@@ -51,7 +50,7 @@
                 <dt>{{ config("variables.venue") }}</dt>
             </div>
 
-            <div class="py-2 md:px-6">
+            <div class="py-2 lg:px-6">
                 <dt
                     class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
                 >
@@ -63,17 +62,22 @@
     </div>
 </section>
 
-<svg
-    class="sticky top-[-3.8vw] z-40 -mt-1"
-    viewBox="0 0 1584 68"
-    xmlns="http://www.w3.org/2000/svg"
->
-    <rect width="1584" height="68" fill="#53345D" />
-    <path
-        d="M0 32.4882L33.088 38.5198C66.352 44.4456 132.528 56.5087 198.528 53.6516C264.528 50.7946 330.352 33.2289 396.352 27.1974C462.352 21.1658 528.528 26.8799 594.528 30.5835C660.528 34.2871 726.352 35.9802 792.352 42.8583C858.352 49.7364 924.528 61.7996 990.528 66.0322C1056.53 70.2649 1122.35 66.6671 1188.35 64.5508C1254.35 62.4345 1320.53 61.7996 1386.53 55.5563C1452.53 49.419 1518.35 37.7791 1551.09 31.9591L1584 26.1392V0C1584 0 1583.82 0 1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 32.4882Z"
-        fill="#0F172A"
+<div class="sticky top-[-3.8vw] z-40 -mt-1">
+    <svg viewBox="0 0 1584 68" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1584" height="68" fill="#53345D" />
+        <path
+            d="M0 32.4882L33.088 38.5198C66.352 44.4456 132.528 56.5087 198.528 53.6516C264.528 50.7946 330.352 33.2289 396.352 27.1974C462.352 21.1658 528.528 26.8799 594.528 30.5835C660.528 34.2871 726.352 35.9802 792.352 42.8583C858.352 49.7364 924.528 61.7996 990.528 66.0322C1056.53 70.2649 1122.35 66.6671 1188.35 64.5508C1254.35 62.4345 1320.53 61.7996 1386.53 55.5563C1452.53 49.419 1518.35 37.7791 1551.09 31.9591L1584 26.1392V0C1584 0 1583.82 0 1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 32.4882Z"
+            fill="#0F172A"
+        />
+    </svg>
+    <img
+        class="absolute bottom-0 z-40"
+        width="400"
+        height="363"
+        src="{{ Vite::asset("resources/img/poster-crab.png") }}"
     />
-</svg>
+</div>
+
 <svg
     class="sticky top-[-4.3vw] z-30 -mt-1"
     viewBox="0 0 1584 120"
