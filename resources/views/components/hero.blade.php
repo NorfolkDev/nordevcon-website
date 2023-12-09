@@ -2,19 +2,19 @@
     class="relative flex min-h-[70dvh] flex-col justify-between bg-slate-900"
 >
     <div
-        class="sticky top-0 flex justify-between gap-4 p-8 px-16 pb-32 lg:gap-8 lg:pl-32"
+        class="sticky top-0 flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pl-32"
     >
-        <div>
+        <div class="pl-16 pt-16 lg:p-0">
             <img
                 width="189"
                 height="189"
                 src="{{ Vite::asset("resources/img/poster-moon.png") }}"
             />
         </div>
-        <div class="align-right flex flex-col justify-end text-white">
+        <div class="flex flex-col gap-8 text-white lg:items-end">
             <x-logo class="w-full max-w-sm lg:max-w-lg" />
             <p
-                class="font-display bg-move inline bg-gradient-to-r from-wave-purple via-wave-pink to-wave-orange bg-clip-text text-5xl font-extrabold leading-normal tracking-tight text-transparent"
+                class="font-display bg-move inline bg-gradient-to-r from-wave-purple via-wave-pink to-wave-orange bg-clip-text text-4xl font-extrabold leading-normal tracking-tight text-transparent lg:text-5xl"
             >
                 {{ config("variables.title") }}
             </p>
