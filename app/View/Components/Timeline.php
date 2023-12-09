@@ -18,27 +18,27 @@ class Timeline extends Component
             ],
             [
                 "Pre-Conference Social",
-                "A day of workshops",
+                "They say the \"corridor conference\" is the best part of any conference; meeting friends new & old! Networking is one of most powerful elements of both professional and personal life. Discuss the upcoming conference, debate your schedule, what you're looking forward to and are planning to see. What speakers are you most excited by?",
                 "2024-02-14T17:30:00.000Z"
             ],
             [
                 "Conference Day 1 - Registration Opens",
-                "A day of workshops",
+                "The first day of the conference; join us for nine sessions and two keynotes, deep diving into software development!",
                 "2024-02-15T11:00:00.000Z"
             ],
             [
                 "Conference Social",
-                "A day of workshops",
+                "Thursday evening, we'll move from the Kings Centre to the Last Pub Standing \"en mass\". A free bar, a BBQ, DJ, and a great opportunity to network with your fellows!",
                 "2024-02-15T17:30:00.000Z"
             ],
             [
                 "Conference Day 2 - Registration Opens",
-                "A day ",
+                "The second day, a full day of talks! 6 sessions on software development, 3 panels, and 6 sessions on career & business growth",
                 "2024-02-16T08:30:00.000Z"
             ],
             [
                 "Conference Dinner",
-                "A day of workshops",
+                "A gourmet three-course meal with a wine reception. A great way to finish off the two days of learning; chat with fellows & network over some great food.",
                 "2024-02-16T18:30:00.000Z"
             ],
         ])->map(fn ($item) => TimelineItem::make($item));
