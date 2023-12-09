@@ -7,6 +7,7 @@
 
     <x-introduction />
     <x-expect />
+    <x-timeline />
     <x-sponsors />
     <x-discord />
     <x-newsletter />
