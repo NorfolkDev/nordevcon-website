@@ -21,17 +21,17 @@
             <ol>
                 <li>
                     <a class="underline" href="https://2020.nordevcon.com">
-                        Visit the nor(DEV): con 2020 website
+                        nor(DEV): con 2020
                     </a>
                 </li>
                 <li>
                     <a class="underline" href="https://2022.nordevcon.com">
-                        Visit the nor(DEV): con 2022 website
+                        nor(DEV): con 2022
                     </a>
                 </li>
                 <li>
                     <a class="underline" href="https://2023.nordevcon.com">
-                        Visit the nor(DEV): con 2023 website
+                        nor(DEV): con 2023
                     </a>
                 </li>
             </ol>
