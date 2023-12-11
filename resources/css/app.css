@@ -18,3 +18,8 @@
         background-position: 0% 50%;
     }
 }
+
+.bg-blur-fade {
+    backdrop-filter: blur(10px);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}

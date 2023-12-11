@@ -2,9 +2,9 @@
     class="relative flex min-h-[70dvh] flex-col justify-between bg-slate-900"
 >
     <div
-        class="sticky top-0 flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pl-32"
+        class="bg-blur-fade sticky top-0 flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
     >
-        <div class="pl-16 pt-16 lg:p-0">
+        <div class="pl-16 pt-8 lg:p-0">
             <img
                 width="189"
                 height="189"
@@ -20,54 +20,17 @@
             </p>
         </div>
     </div>
-    <div class="hidden px-4 opacity-90 lg:block lg:px-16">
-        <dl
-            class="flex flex flex-col justify-end divide-dotted divide-wave-orange/50 text-3xl text-white lg:flex-row lg:divide-x-2"
-        >
-            <div class="py-2 lg:px-6">
-                <dt
-                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
-                >
-                    Speakers
-                </dt>
-                <dt>{{ $speakerCount }}</dt>
-            </div>
-            <div class="py-2 lg:px-6">
-                <dt
-                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
-                >
-                    People Attending
-                </dt>
-                <dt>{{ config("variables.attendees") }}</dt>
-            </div>
 
-            <div class="py-2 lg:px-6">
-                <dt
-                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
-                >
-                    Venue
-                </dt>
-                <dt>{{ config("variables.venue") }}</dt>
-            </div>
-
-            <div class="py-2 lg:px-6">
-                <dt
-                    class="mb-1 font-condensed font-condensed text-lg font-black font-black font-black uppercase tracking-wide text-wave-orange"
-                >
-                    Location
-                </dt>
-                <dt>{{ config("variables.location") }}</dt>
-            </div>
-        </dl>
+    <div class="-mt-32 hidden lg:block">
+        <x-illustration.city />
     </div>
 </section>
 
-<div class="sticky top-[-3.8vw] z-40 -mt-1">
-    <svg viewBox="0 0 1584 68" xmlns="http://www.w3.org/2000/svg">
-        <rect width="1584" height="68" fill="#53345D" />
+<div class="sticky top-[-5.4vw] z-40 -mt-32">
+    <svg viewBox="0 0 1584 116" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-            d="M0 32.4882L33.088 38.5198C66.352 44.4456 132.528 56.5087 198.528 53.6516C264.528 50.7946 330.352 33.2289 396.352 27.1974C462.352 21.1658 528.528 26.8799 594.528 30.5835C660.528 34.2871 726.352 35.9802 792.352 42.8583C858.352 49.7364 924.528 61.7996 990.528 66.0322C1056.53 70.2649 1122.35 66.6671 1188.35 64.5508C1254.35 62.4345 1320.53 61.7996 1386.53 55.5563C1452.53 49.419 1518.35 37.7791 1551.09 31.9591L1584 26.1392V0C1584 0 1583.82 0 1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 32.4882Z"
-            fill="#0F172A"
+            d="M33.088 87.9715L0 87.3543L0 8.48822L33.088 14.5198C66.352 20.4455 132.528 32.5087 198.528 29.6516C264.528 26.7946 330.352 9.22894 396.352 3.19737C462.352 -2.83421 528.528 2.87991 594.528 6.58351C660.528 10.2871 726.352 11.9802 792.352 18.8583C858.352 25.7364 924.528 37.7995 990.528 42.0322C1056.53 46.2649 1122.35 42.6671 1188.35 40.5508C1254.35 38.4344 1320.53 37.7995 1386.53 31.5563C1452.53 25.4189 1518.35 13.7791 1551.09 7.95913L1584 2.1392V93.5269L1551.09 86.9839C1518.35 80.3175 1452.53 67.2317 1386.53 72.9104C1320.53 78.7127 1254.35 103.403 1188.35 112.045C1122.35 120.686 1056.53 113.279 990.528 107.724C924.528 102.168 858.352 98.4649 792.352 91.0578C726.352 83.6507 660.528 72.5401 594.528 75.9967C528.528 79.5768 462.352 97.6008 396.352 102.539C330.352 107.477 264.528 99.3291 198.528 94.5145C132.528 89.8233 66.352 88.5888 33.088 87.9715Z"
+            fill="#53345D"
         />
     </svg>
     <img
@@ -79,18 +42,7 @@
 </div>
 
 <svg
-    class="sticky top-[-4.3vw] z-30 -mt-1"
-    viewBox="0 0 1584 120"
-    xmlns="http://www.w3.org/2000/svg"
->
-    <rect width="1584" height="120" fill="#AC4B74" />
-    <path
-        d="M0 91.3543L33.088 91.9715C66.352 92.5888 132.528 93.8233 198.528 98.5145C264.528 103.329 330.352 111.477 396.352 106.539C462.352 101.601 528.528 83.5768 594.528 79.9967C660.528 76.5401 726.352 87.6507 792.352 95.0578C858.352 102.465 924.528 106.168 990.528 111.724C1056.53 117.279 1122.35 124.686 1188.35 116.045C1254.35 107.403 1320.53 82.7127 1386.53 76.9104C1452.53 71.2316 1518.35 84.3175 1551.09 90.9839L1584 97.5269V0L1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 91.3543Z"
-        fill="#53345D"
-    />
-</svg>
-<svg
-    class="sticky top-[-3vw] z-20 -mt-1"
+    class="sticky top-[-3vw] z-20 -mt-6 lg:-mt-16"
     viewBox="0 0 1584 154"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +53,8 @@
         fill="#AC4B74"
     />
 </svg>
-<div class="relative sticky top-0 z-10 -mb-16 -mt-1">
+
+<div class="relative sticky top-0 z-10 -mb-16 -mt-1 lg:-mt-16">
     <svg viewBox="0 0 1584 181" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             d="M0 141.509L33.088 143.155C66.352 144.8 132.528 148.091 198.528 151.135C264.528 154.097 330.352 156.894 396.352 160.596C462.352 164.299 528.528 168.906 594.528 169.482C660.528 170.058 726.352 166.438 792.352 158.21C858.352 149.983 924.528 137.149 990.528 132.459C1056.53 127.77 1122.35 131.39 1188.35 139.452C1254.35 147.515 1320.53 164.349 1386.53 172C1452.53 179.651 1449.26 179.684 1482 181L1584 181V0L1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 141.509Z"
