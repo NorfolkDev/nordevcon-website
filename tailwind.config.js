@@ -2,7 +2,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./resources/**/*.blade.php", "./resources/**/*.js"],
+    content: ["./app/**/*.php", "./resources/**/*.blade.php", "./resources/**/*.js"],
     theme: {
         extend: {
             colors: {
