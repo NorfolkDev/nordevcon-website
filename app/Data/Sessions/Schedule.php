@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 class Schedule
 {
     /*
-     * @param Day[] $days
+     * @param \App\Data\Sessions\Day[] $days
      */
     public function __construct(
         public Collection $days
