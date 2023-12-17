@@ -83,7 +83,7 @@
                 </ol>
             </li>
             <li>
-                <ol class="grid auto-rows-fr grid-cols-2 gap-6 lg:grid-cols-4">
+                <ol class="grid auto-rows-fr grid-cols-3 gap-6 lg:grid-cols-4">
                     @foreach ($sponsors->where("package", "Associate") as $sponsor)
                         <li
                             class="col-span-1 flex rounded-md bg-indigo-100 px-8 py-8"
