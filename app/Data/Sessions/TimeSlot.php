@@ -3,6 +3,7 @@
 namespace App\Data\Sessions;
 
 use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
 
 class TimeSlot
 {
@@ -17,11 +18,11 @@ class TimeSlot
         //
     }
 
-    static function fromSessionize(array $data): self
+    static function fromSessionize(array $data, Speakers $speakers): self
     {
         return new self(
-            $data["slotStart"],
-            collect($data["rooms"])->map(fn (array $room) => Session::fromSessionize($room)),
+            Str::replaceLast(":00", "", $data["slotStart"]),
+            collect($data["rooms"])->map(fn (array $room) => Session::fromSessionize($room, $speakers)),
         );
     }
 }
