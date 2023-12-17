@@ -6,6 +6,12 @@ use Illuminate\Support\Carbon;
 
 class Session
 {
+    const THEME = [
+        "Main Auditorium" => "border-[#c53030]",
+        "Conference Room 1" => "border-[#4299e1]",
+        "Conference Room 2" => "border-[#68d391]",
+    ];
+
     public function __construct(
         public string $name,
         protected array $data
@@ -13,15 +19,24 @@ class Session
         //
     }
 
-    static function fromSessionize(array $data): self
+    static function fromSessionize(array $data, Speakers $speakers): self
     {
-        $duration = Carbon::parse($data["session"]["endsAt"])->diffInMinutes(Carbon::parse($data["session"]["startsAt"]));
+        $startsAt = Carbon::parse($data["session"]["startsAt"]);
+        $endsAt = Carbon::parse($data["session"]["endsAt"]);
+        $duration = $endsAt->diffInMinutes($startsAt);
+
+        $speakerCollection = collect($data["session"]["speakers"])
+            ->map(fn ($speakerData) => $speakers->list->first(fn ($speaker) => $speaker->id === $speakerData["id"]));
 
         return new self(
             $data["name"],
             [
                 ...$data["session"],
+                "startsAt" => $startsAt,
+                "endsAt" => $endsAt,
                 "duration" => $duration,
+                "speakers" => $speakerCollection,
+                "theme" => self::THEME[$data["session"]["room"]],
             ]
         );
     }
