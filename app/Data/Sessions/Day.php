@@ -18,11 +18,11 @@ class Day
         //
     }
 
-    static function fromSessionize(array $data): self
+    static function fromSessionize(array $data, Speakers $speakers): self
     {
         return new self(
             Carbon::parse($data["date"]),
-            collect($data["timeSlots"])->map(fn (array $timeSlots) => TimeSlot::fromSessionize($timeSlots))
+            collect($data["timeSlots"])->map(fn (array $timeSlots) => TimeSlot::fromSessionize($timeSlots, $speakers))
         );
     }
 }

@@ -3,6 +3,8 @@
 namespace App\Services;
 
 use App\Data\Sessions\Schedule;
+use App\Data\Sessions\Speakers;
+use Barryvdh\Debugbar\Facades\Debugbar;
 use Error;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -22,10 +24,12 @@ class Sessionize
             return $response->json();
         });
 
-        return Schedule::fromSessionize($data);
+        $speakers = self::getSpeakers();
+
+        return Schedule::fromSessionize($data, $speakers);
     }
 
-    static function getSpeakers(): Collection
+    static function getSpeakers(): Speakers
     {
         $data = Cache::remember("sessionize_speakers", 10_800, function () {
             $response = Http::get("https://sessionize.com/api/v2/6rdd3z2a/view/Speakers");
@@ -37,6 +41,6 @@ class Sessionize
             return $response->json();
         });
 
-        return collect($data);
+        return Speakers::fromSessionize($data);
     }
 }

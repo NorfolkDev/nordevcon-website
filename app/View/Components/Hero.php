@@ -11,8 +11,7 @@ class Hero extends Component
 {
     public function render(): View|Closure|string
     {
-        $speakers = Sessionize::getSpeakers();
-        $speakerCount = count($speakers);
+        $speakerCount = Sessionize::getSpeakers()->list->count();
 
         return view('components.hero', compact("speakerCount"));
     }

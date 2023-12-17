@@ -15,8 +15,8 @@ class Schedule
         //
     }
 
-    static function fromSessionize(array $data): self
+    static function fromSessionize(array $data, Speakers $speakers): self
     {
-        return new self(collect($data)->map(fn (array $dayData) => Day::fromSessionize($dayData)));
+        return new self(collect($data)->map(fn (array $dayData) => Day::fromSessionize($dayData, $speakers)));
     }
 }

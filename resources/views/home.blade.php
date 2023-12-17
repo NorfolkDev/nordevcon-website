@@ -7,6 +7,7 @@
 
     <x-introduction />
     <x-expect />
+    <x-schedule />
     <x-timeline />
     <x-sponsors />
     <x-discord />
