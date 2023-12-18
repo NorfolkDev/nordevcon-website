@@ -1,8 +1,45 @@
 <div
-    class="mx-auto my-12 flex w-full flex-col gap-8 px-4 sm:px-6 lg:max-w-7xl lg:flex-row lg:px-8"
+    class="mx-auto my-12 flex w-full flex-col gap-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:flex-row-reverse"
 >
-    <div class="mx-auto w-full max-w-2xl text-slate-900 lg:max-w-none">
-        <h4 class="mb-4 text-5xl font-black tracking-wide lg:text-6xl">
+    <ul
+        class="grid shrink-0 grid-cols-4 gap-4 xl:w-1/2 xl:grid-cols-[repeat(2,1fr)] xl:grid-rows-[repeat(2,max-content)]"
+    >
+        <li class="rounded-md bg-wave-purple p-2">
+            <img
+                class="aspect-square rounded object-cover"
+                height="800px"
+                width="800px"
+                src="{{ Vite::asset("resources/img/timeline_1.jpg") }}"
+            />
+        </li>
+        <li class="rounded-md bg-wave-purple p-2">
+            <img
+                class="aspect-square rounded object-cover"
+                height="800px"
+                width="800px"
+                src="{{ Vite::asset("resources/img/timeline_2.jpg") }}"
+            />
+        </li>
+        <li class="rounded-md bg-wave-purple p-2">
+            <img
+                class="aspect-square rounded object-cover"
+                height="800px"
+                width="800px"
+                src="{{ Vite::asset("resources/img/timeline_3.jpg") }}"
+            />
+        </li>
+        <li class="rounded-md bg-wave-purple p-2">
+            <img
+                class="aspect-square rounded object-cover"
+                height="800px"
+                width="800px"
+                src="{{ Vite::asset("resources/img/timeline_4.jpg") }}"
+            />
+        </li>
+    </ul>
+
+    <div class="mx-auto w-full max-w-2xl text-slate-900 lg:max-w-none xl:w-1/2">
+        <h4 class="mb-4 text-3xl font-black tracking-wide lg:text-6xl">
             What's the plan?
         </h4>
 
@@ -12,31 +49,4 @@
             @endforeach
         </ol>
     </div>
-
-    <ul class="grid grid-cols-4 gap-4 lg:grid-cols-2">
-        <li class="rounded-md bg-wave-purple p-2">
-            <img
-                class="h-full w-full rounded object-cover"
-                src="{{ Vite::asset("resources/img/timeline_1.jpg") }}"
-            />
-        </li>
-        <li class="rounded-md bg-wave-purple p-2">
-            <img
-                class="h-full w-full rounded object-cover"
-                src="{{ Vite::asset("resources/img/timeline_2.jpg") }}"
-            />
-        </li>
-        <li class="rounded-md bg-wave-purple p-2">
-            <img
-                class="h-full w-full rounded object-cover"
-                src="{{ Vite::asset("resources/img/timeline_3.jpg") }}"
-            />
-        </li>
-        <li class="rounded-md bg-wave-purple p-2">
-            <img
-                class="h-full w-full rounded object-cover"
-                src="{{ Vite::asset("resources/img/timeline_4.jpg") }}"
-            />
-        </li>
-    </ul>
 </div>
