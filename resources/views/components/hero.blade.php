@@ -4,8 +4,9 @@
     <div
         class="flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
     >
-        <div>
+        <div class="text-right lg:text-left">
             <img
+                class="inline-block"
                 width="189"
                 height="189"
                 src="{{ Vite::asset("resources/img/poster-moon.png") }}"
@@ -26,7 +27,9 @@
     <div
         class="absolute bottom-2/3 left-0 right-0 z-50 flex overflow-hidden lg:items-end lg:justify-end"
     >
-        <div class="w-full min-w-[80rem] lg:max-w-5xl xl:max-w-7xl">
+        <div
+            class="w-full min-w-[80rem] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl"
+        >
             <x-illustration.city />
         </div>
     </div>
@@ -87,7 +90,7 @@
     </svg>
 
     <img
-        class="absolute bottom-1/2 z-50 max-w-[50vw] lg:max-w-[40vw]"
+        class="absolute bottom-1/2 z-50 max-w-[50vw] lg:max-w-[30vw]"
         width="400"
         height="363"
         src="{{ Vite::asset("resources/img/poster-crab.png") }}"
