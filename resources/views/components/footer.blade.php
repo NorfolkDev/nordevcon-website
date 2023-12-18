@@ -9,8 +9,8 @@
 
             <div>
                 <p class="text-base md:mt-0">
-                    Copyright © 2022 Norfolk Developers, Ltd. All rights
-                    reserved.
+                    Copyright © {{ now()->year }} Norfolk Developers, Ltd. All
+                    rights reserved.
                 </p>
             </div>
         </div>
