@@ -2,6 +2,8 @@
 
 namespace App\Data\Sessions;
 
+use Illuminate\Support\Facades\Vite;
+
 class Speaker
 {
     public function __construct(
@@ -22,7 +24,7 @@ class Speaker
             $data["fullName"] ?? "",
             $data["bio"] ?? "",
             $data["tagLine"] ?? "",
-            $data["profilePictureUrl"] ?? "",
+            $data["profilePicture"] ?: Vite::asset("resources/img/avatar.png"),
             $data["keynote"] ?? "",
         );
     }
