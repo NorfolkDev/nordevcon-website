@@ -1,5 +1,5 @@
 <section
-    class="relative flex min-h-[90dvh] flex-col justify-between bg-slate-900 lg:min-h-[90dvh]"
+    class="relative flex min-h-[90vh] flex-col justify-between bg-slate-900"
 >
     <div
         class="flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
