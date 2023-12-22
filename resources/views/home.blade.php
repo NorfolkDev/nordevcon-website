@@ -6,9 +6,10 @@
     <x-hero />
 
     <x-introduction />
-    <x-expect />
     <x-schedule />
     <x-timeline />
+    <x-tickets />
+    <x-expect />
     <x-sponsors />
     <x-discord />
     <x-newsletter />
