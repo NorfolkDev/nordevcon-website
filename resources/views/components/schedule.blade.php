@@ -6,6 +6,10 @@
         class="grid grid-cols-[auto_repeat(1,_1fr)] gap-4 lg:grid-cols-[auto_repeat(3,_1fr)]"
     >
         @foreach ($schedule->days as $day)
+            <li class="col-span-2 py-4 text-2xl font-bold lg:col-span-4">
+                Day #{{ $loop->index + 1 }}:
+                {{ $day->date->isoFormat("dddd, Do MMM") }}
+            </li>
             @foreach ($day->timeSlots as $timeSlot)
                 <li>
                     <h3
