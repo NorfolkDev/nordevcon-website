@@ -26,5 +26,13 @@
         <p class="font-condensed text-sm">
             {{ $entry->description }}
         </p>
+        @if ($entry->href)
+            <a
+                href="{{ $entry->href }}"
+                class="mt-2 block text-sm font-black text-wave-orange hover:underline"
+            >
+                Read more &raquo;
+            </a>
+        @endif
     </div>
 </li>
