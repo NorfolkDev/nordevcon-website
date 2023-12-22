@@ -4,7 +4,7 @@
     <div
         class="flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
     >
-        <div class="text-right lg:text-left">
+        <div class="hidden lg:block">
             <img
                 class="inline-block"
                 width="189"
@@ -17,8 +17,14 @@
             <p
                 class="font-display bg-move inline bg-gradient-to-r from-wave-purple via-wave-pink to-wave-orange bg-clip-text text-right text-4xl font-extrabold leading-normal tracking-tight text-transparent lg:text-6xl"
             >
-                {{ config("variables.title") }}
+                {{ config("variables.date") }}
             </p>
+            <a
+                href="{{ config("variables.ticket_url") }}"
+                class="hover:ring-wave-orange-75 mt-4 rounded bg-wave-orange px-4 py-2 text-3xl font-black text-slate-900 ring-4 ring-wave-orange/50 transition-all hover:ring-8"
+            >
+                Get Your Tickets & Merch
+            </a>
         </div>
     </div>
 </section>
@@ -28,7 +34,7 @@
         class="absolute bottom-2/3 left-0 right-0 z-50 flex overflow-hidden lg:items-end lg:justify-end"
     >
         <div
-            class="w-full min-w-[80rem] lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl"
+            class="w-full min-w-[80rem] opacity-25 lg:max-w-3xl lg:opacity-100 xl:max-w-5xl 2xl:max-w-7xl"
         >
             <x-illustration.city />
         </div>
