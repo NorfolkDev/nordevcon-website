@@ -1,4 +1,7 @@
 <div class="mx-auto my-12 w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <h4 class="mb-4 text-3xl font-black tracking-wide lg:text-6xl">
+        The Schedule
+    </h4>
     <ol
         class="grid grid-cols-[auto_repeat(1,_1fr)] gap-4 lg:grid-cols-[auto_repeat(3,_1fr)]"
     >
