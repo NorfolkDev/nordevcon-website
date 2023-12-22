@@ -9,7 +9,7 @@
                 {{ config("variables.date") }}
             </p>
             <a href="{{ config("variables.ticket_url") }}" class="hover:ring-wave-orange-75 mt-4 rounded bg-wave-orange px-4 py-2 text-3xl font-black text-slate-900 ring-4 ring-wave-orange/50 transition-all hover:ring-8">
-                Get Your Tickets & Merch
+                Tickets & Merch
             </a>
         </div>
     </div>
