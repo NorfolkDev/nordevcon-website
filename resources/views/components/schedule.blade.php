@@ -27,7 +27,7 @@
                     >
                         <div>
                             <button
-                                @class(["cursor-pointer text-left font-bold leading-none", "hover:text-wave-purple" => $session->description])
+                                @class(["text-left font-bold leading-none", "cursor-pointer hover:text-wave-purple" => $session->description])
                                 @if($session->description) dialog @endif
                             >
                                 {{ $session->title }}
