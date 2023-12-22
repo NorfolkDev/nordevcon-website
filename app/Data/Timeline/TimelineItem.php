@@ -10,7 +10,7 @@ class TimelineItem
         public string $headline,
         public string $description,
         public Carbon $datetime,
-
+        public ?string $href,
     ) {
     }
 
@@ -20,6 +20,7 @@ class TimelineItem
             $data[0],
             $data[1],
             Carbon::parse($data[2]),
+            $data[3] ?? null
         );
     }
 }
