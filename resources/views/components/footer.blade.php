@@ -69,7 +69,12 @@
 
             <ol>
                 <li>
-                    <a class="underline" href="#">Code of Conduct</a>
+                    <a
+                        class="underline"
+                        href="https://norfolkdevelopers.com/code-of-conduct"
+                    >
+                        Code of Conduct
+                    </a>
                 </li>
                 <li>
                     <a class="underline" href="#">Sponsor Us</a>
