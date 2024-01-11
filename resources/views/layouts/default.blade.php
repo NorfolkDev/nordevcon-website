@@ -4,11 +4,11 @@
         <title>@yield("title") | {{ config("variables.title") }}</title>
         <meta
             property="og:title"
-            content="@yield("title") | {{ config("variables.title") }}"
+            content="@yield(" title") | {{ config("variables.title") }}"
         />
         <meta
             name="twitter:title"
-            content="@yield("title") | {{ config("variables.title") }}"
+            content="@yield(" title") | {{ config("variables.title") }}"
         />
 
         <meta
@@ -23,7 +23,10 @@
             name="twitter:description"
             content="@yield('description', config('variables.description'))"
         />
-
+        <meta
+            name="og:image"
+            content="{{ Vite::asset("resources/img/website-hero.jpg") }}"
+        />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta
             name="theme-color"
