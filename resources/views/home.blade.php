@@ -7,6 +7,7 @@
 
     <x-introduction />
     <x-schedule />
+    <x-workshops />
     <x-timeline />
     <x-tickets />
     <x-expect />
