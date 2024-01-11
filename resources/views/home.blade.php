@@ -11,6 +11,7 @@
     <x-timeline />
     <x-tickets />
     <x-expect />
+    <x-testimonials />
     <x-sponsors />
     <x-discord />
     <x-newsletter />
