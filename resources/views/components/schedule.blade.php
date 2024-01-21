@@ -96,9 +96,9 @@
                             <x-schedule.dialog :session="$session" />
                         </div>
 
-                        <ul>
-                            {{ $session->speakers->pluck("fullName")->join(", ") }}
-                        </ul>
+                        <p>
+                            {{ $session->speakers->map->fullName->join(", ") }}
+                        </p>
                     </li>
                 @endforeach
             @endforeach

@@ -40,20 +40,27 @@
                     {{ $session->startsAt->isoFormat("ddd, Do MMM h:mma") }}
                 </p>
             </div>
-            <div class="flex gap-4">
-                <div>
+            <div class="group flex gap-4">
+                <div class="-space-x-12 group-hover:space-x-2">
                     @foreach ($session->speakers as $speaker)
                         <img
-                            @class(["w-24 rounded-full border-2 border-slate-900", "-ml-20" => ! $loop->first])
+                            class="inline-block w-24 rounded-full border-2 border-slate-900 transition-all ease-in-out"
                             alt="{{ $speaker->fullName }} is at nor(DEV): con 2024"
                             src="{{ $speaker->profilePictureUrl }}"
                         />
                     @endforeach
                 </div>
                 <div>
-                    <h4 class="text-2xl font-bold tracking-tight">
-                        {{ $session->speakers->map->fullName->join(", ") }}
-                    </h4>
+                    @foreach ($session->speakers as $speaker)
+                        <h4 class="text-2xl font-bold tracking-tight">
+                            {{ $speaker->fullName }}
+                            <span
+                                class="-translate-x-1/2 text-sm uppercase text-gray-700 opacity-0 transition group-hover:opacity-100"
+                            >
+                                {{ $speaker->tagline }}
+                            </span>
+                        </h4>
+                    @endforeach
                 </div>
             </div>
         </div>
