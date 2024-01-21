@@ -14,9 +14,8 @@
         </div>
         <div class="flex flex-1 justify-end p-2 lg:p-0">
             <a
-                x-show="favourites.length"
                 :href="`/schedule?s=${favourites.join(',')}`"
-                class="flex rounded-md bg-wave-purple px-4 py-2 font-bold text-white"
+                :class="`${favourites.length ? 'opacity-100' : 'opacity-0'} transition flex rounded-md bg-wave-purple px-4 py-2 font-bold text-white`"
                 href="/schedule?share=41"
             >
                 View
