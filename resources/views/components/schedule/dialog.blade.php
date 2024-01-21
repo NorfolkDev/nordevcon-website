@@ -55,7 +55,7 @@
                         <h4 class="text-2xl font-bold tracking-tight">
                             {{ $speaker->fullName }}
                             <span
-                                class="-translate-x-1/2 text-sm uppercase text-gray-700 opacity-0 transition group-hover:opacity-100"
+                                class="inline-block -translate-x-1/2 text-sm uppercase text-gray-700 opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100"
                             >
                                 {{ $speaker->tagline }}
                             </span>
