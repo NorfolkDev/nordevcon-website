@@ -34,7 +34,7 @@
             align="right"
             headline="Fabric: AI Data Analytics"
             image="{{ Vite::asset('resources/img/workshop_fabric.jpg') }}"
-            date="Wednesday, 14 February 2024 @ 10:00am – 1:00pm"
+            date="Wednesday, 14 February 2024. 10am – 1pm"
             description="An all-in-one analytics solution that covers everything from data movement to data science, real-time analytics, and business intelligence."
             label="Grab a seat for £28!"
         />
@@ -42,7 +42,7 @@
         <x-workshops.item
             headline="Describing Narratives"
             image="{{ Vite::asset('resources/img/workshop_ink.jpg') }}"
-            date="Wednesday, 14th February. 10am to 5pm"
+            date="Wednesday, 14th February. 2pm to 5pm"
             description="A narrative scripting language for games."
             label="Grab a seat for £28!"
         />
