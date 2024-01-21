@@ -15,4 +15,5 @@
     <x-sponsors />
     <x-discord />
     <x-newsletter />
+    <x-footer />
 @endsection

@@ -44,8 +44,6 @@
     <body class="min-h-[100dvh] bg-gray-100">
         <main>
             @yield("content")
-
-            <x-footer />
         </main>
 
         @vite("resources/js/app.js")
