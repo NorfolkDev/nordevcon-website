@@ -43,6 +43,13 @@
 
     <body class="min-h-[100dvh] bg-gray-100">
         <main>
+            <div class="bg-white/80 fixed top-0 left-0 right-0 z-[9999] p-4 font-bold">
+                <p>
+                    This is an archive of a previous conference - thanks for checking it out! You can see our current
+                    conference at <a class="underline" href="https://nordevcon.com">nordevcon.com</a>
+                </p>
+            </div>
+
             @yield("content")
         </main>
 
