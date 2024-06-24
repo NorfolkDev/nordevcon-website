@@ -15,16 +15,16 @@ class Airtable
         $data = Cache::remember('airtable_sponsors', $ttl, function () {
             $response = Http::withToken(config('services.airtable.key'))->get('https://api.airtable.com/v0/appThZp8te1uSNLKy/Sponsors');
 
-            if (!$response->ok()) {
-                throw new Error("Error getting sponsors from Airtable");
+            if (! $response->ok()) {
+                throw new Error('Error getting sponsors from Airtable');
             }
 
-            return $response->json()["records"];
+            return $response->json()['records'];
         });
 
         return collect($data)
-            ->pluck("fields")
-            ->filter(fn (array $row) => $row["Status"] === "Complete")
+            ->pluck('fields')
+            ->filter(fn (array $row) => $row['Status'] === 'Complete')
             ->map(fn (array $row) => Sponsor::fromAirtable($row));
     }
 }

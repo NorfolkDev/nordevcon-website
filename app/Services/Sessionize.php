@@ -4,9 +4,7 @@ namespace App\Services;
 
 use App\Data\Sessions\Schedule;
 use App\Data\Sessions\Speakers;
-use Barryvdh\Debugbar\Facades\Debugbar;
 use Error;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
@@ -17,8 +15,8 @@ class Sessionize
         $data = Cache::remember('sessionize_sessions', $ttl, function () {
             $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart');
 
-            if (!$response->ok()) {
-                throw new Error("Error getting sessions from Sessionize");
+            if (! $response->ok()) {
+                throw new Error('Error getting sessions from Sessionize');
             }
 
             return $response->json();
@@ -29,13 +27,13 @@ class Sessionize
         return Schedule::fromSessionize($data, $speakers);
     }
 
-    static function getSpeakers(): Speakers
+    public static function getSpeakers(?int $ttl = 10_800): Speakers
     {
-        $data = Cache::remember("sessionize_speakers", 10_800, function () {
-            $response = Http::get("https://sessionize.com/api/v2/6rdd3z2a/view/Speakers");
+        $data = Cache::remember('sessionize_speakers', $ttl, function () {
+            $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/Speakers');
 
-            if (!$response->ok()) {
-                throw new Error("Error getting speakers from Sessionize");
+            if (! $response->ok()) {
+                throw new Error('Error getting speakers from Sessionize');
             }
 
             return $response->json();
