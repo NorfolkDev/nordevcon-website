@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\Http;
 
 class Airtable
 {
-    static function getSponsors(): Collection
+    public static function getSponsors(?int $ttl = 10_800): Collection
     {
-        $data = Cache::remember("airtable_sponsors", 10_800, function () {
-            $response = Http::withToken(config("services.airtable.key"))->get("https://api.airtable.com/v0/appThZp8te1uSNLKy/Sponsors");
+        $data = Cache::remember('airtable_sponsors', $ttl, function () {
+            $response = Http::withToken(config('services.airtable.key'))->get('https://api.airtable.com/v0/appThZp8te1uSNLKy/Sponsors');
 
             if (!$response->ok()) {
                 throw new Error("Error getting sponsors from Airtable");

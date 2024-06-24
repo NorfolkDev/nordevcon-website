@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Http;
 
 class Sessionize
 {
-    static function getSessions(): Schedule
+    public static function getSessions(?int $ttl = 10_800): Schedule
     {
-        $data = Cache::remember("sessionize_sessions", 10_800, function () {
-            $response = Http::get("https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart");
+        $data = Cache::remember('sessionize_sessions', $ttl, function () {
+            $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart');
 
             if (!$response->ok()) {
                 throw new Error("Error getting sessions from Sessionize");
