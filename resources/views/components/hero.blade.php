@@ -5,12 +5,6 @@
         class="z-50 flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
     >
         <div class="hidden lg:block">
-            <img
-                class="inline-block"
-                width="189"
-                height="189"
-                src="{{ Vite::asset("resources/img/poster-moon.png") }}"
-            />
         </div>
         <div class="flex flex-col items-end gap-8 text-white">
             <x-logo class="w-full max-w-sm lg:max-w-lg" />

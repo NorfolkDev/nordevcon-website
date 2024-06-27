@@ -19,7 +19,7 @@
         <h4 class="font-black">{{ $entry->headline }}</h4>
         <time
             datetime="{{ $entry->datetime->toIso8601String() }}"
-            class="mb-2 text-xs font-bold leading-5 text-slate-900"
+            class="block mb-2 text-sm font-bold leading-5 text-slate-900"
         >
             {{ $entry->datetime->isoFormat("ddd, Do MMM h:mma") }}
         </time>

@@ -9,9 +9,17 @@
 
             <div class="mx-auto max-w-4xl">
                 <p
-                    class="mt-4 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl"
+                    class="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
                 >
-                    Crab your ticket now!
+                    Crab your ticket now! <br/>
+                    With a <span class="font-extrabold">70%</span> Super Early Bird Discount!
+                </p>
+
+                <p
+                    class="mt-4 text-white"
+                >
+
+                    Discounted tickets are only available to personal purchases or companies with 5 or less employees. For larger organisations of more than 5 employees we ask you purchase a "Commercial Ticket".
                 </p>
             </div>
         </div>
@@ -28,10 +36,11 @@
             >
                 <x-tickets.item
                     title="Thursday Ticket"
-                    price="£72"
+                    price="£36"
+                    rrp="£120"
                     description="Our development day, 3 tracks with a focus on the technical, new frameworks, new languages and new features"
                     :features="['Frontend Development' , 'Backend Development' , 'System engineering & DevOps' ]"
-                    href="https://ti.to/norfolkdevelopers/nordevcon-24/with/uw6zsxlprpg"
+                    href="https://ti.to/norfolkdevelopers/nordevcon-25/"
                 />
             </div>
 
@@ -40,10 +49,11 @@
             >
                 <x-tickets.item
                     title="Friday Ticket"
-                    price="£126"
-                    description="Our mixed day, 3 tracks, one on development, another on business &amp; wellbeing, and our community spotlight track"
-                    :features="['Software Development' , 'Game Development' , 'Business' ]"
-                    href="https://ti.to/norfolkdevelopers/nordevcon-24/with/io-gl3lg0qu"
+                    price="£63"
+                    rrp="£210"
+                    description="Our mixed day, 3 tracks, one on development, another on business & wellbeing, and our community spotlight track"
+                    :features="['Software Development' , 'Career & Wellbeing', 'Business' ]"
+                    href="https://ti.to/norfolkdevelopers/nordevcon-25/"
                 />
             </div>
         </div>
@@ -54,10 +64,11 @@
             <div class="flex flex-1 flex-col">
                 <x-tickets.item
                     title="Full Ticket"
-                    price="£180"
+                    price="£90"
+                    rrp="£300"
                     description="Access to both days, and the networking events surrounding the conference!"
                     :features="['All the things' , '+ Networking events' , '+ Wine reception'   ]"
-                    href="https://ti.to/norfolkdevelopers/nordevcon-24/with/early-bird-full-ticket"
+                    href="https://ti.to/norfolkdevelopers/nordevcon-25/"
                 />
             </div>
         </div>
