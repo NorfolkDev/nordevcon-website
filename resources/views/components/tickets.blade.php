@@ -19,7 +19,7 @@
                     class="mt-4 text-white"
                 >
 
-                    Discounted tickets are only available to personal purchases or companies with 5 or less employees. For larger organisations of more than 5 employees we ask you purchase a "Commercial Ticket".
+                    Discounted tickets are only available to personal purchases or companies with 10 or less employees. For larger organisations of more than 10 employees we ask you purchase a "Commercial Ticket". Please get in contact with our team if you've feedback on this new model.
                 </p>
             </div>
         </div>
