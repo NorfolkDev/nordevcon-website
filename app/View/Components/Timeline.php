@@ -18,7 +18,7 @@ class Timeline extends Component
             ],
             [
                 'Pre-Conference Social',
-                "They say the \"corridor conference\" is the best part of any conference; meeting friends new & old! Networking is one of most powerful elements of both professional and personal life. Discuss the upcoming conference, debate your schedule, what you're looking forward to and are planning to see. What speakers are you most excited by?",
+                "[Exclusive to full ticketholders] They say the \"corridor conference\" is the best part of any conference; meeting friends new & old! Networking is one of most powerful elements of both professional and personal life. Discuss the upcoming conference, debate your schedule, what you're looking forward to and are planning to see. What speakers are you most excited by?",
                 '2025-02-26T17:30:00.000Z',
                 // "https://www.meetup.com/norfolk-developers-nordev/events/297337576/"
             ],
@@ -29,7 +29,7 @@ class Timeline extends Component
             ],
             [
                 'Conference Social',
-                "Thursday evening, we'll move from the Kings Centre to the Last Pub Standing \"en mass\". A free bar, a BBQ, DJ, and a great opportunity to network with your fellows!",
+                "[Exclusive to full ticketholders] Thursday evening, we'll move from the Kings Centre to the Last Pub Standing \"en mass\". A free bar, a BBQ, DJ, and a great opportunity to network with your fellows!",
                 '2025-02-27T17:30:00.000Z',
                 // "https://www.meetup.com/norfolk-developers-nordev/events/297337629/"
             ],
@@ -40,9 +40,9 @@ class Timeline extends Component
             ],
             [
                 'Conference Dinner',
-                'A gourmet three-course meal with a wine reception. A great way to finish off the two days of learning; chat with fellows & network over some great food.',
+                '[Limited tickets available] An exclusive gourmet three-course meal with a wine reception. A great way to finish off the two days of learning; chat with fellows & network over some great food.',
                 '2025-02-28T18:30:00.000Z',
-                // "https://ti.to/norfolkdevelopers/nordevcon-24/with/conference-dinner"
+                // "https://ti.to/norfolkdevelopers/nordevcon-25/with/conference-dinner"
             ],
         ])->map(fn ($item) => TimelineItem::make($item));
 
