@@ -79,6 +79,9 @@
                 <li>
                     <a class="underline" href="#">Sponsor Us</a>
                 </li>
+                <li>
+                    <a class="underline" href="/volunteer">Volunteer</a>
+                </li>
             </ol>
         </div>
     </div>
