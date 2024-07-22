@@ -24,4 +24,9 @@ class HomeController extends Controller
 
         return view("schedule", compact("sessions"));
     }
+
+    public function volunteer(Request $request): View
+    {
+        return view("volunteer");
+    }
 }
