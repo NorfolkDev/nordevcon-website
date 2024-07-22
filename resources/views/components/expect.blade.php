@@ -69,7 +69,7 @@
             </li>
         </ol>
         <p class="mb-6 py-2 font-condensed text-2xl lg:mb-12">
-            So, ditch the pretence, grab a snack, and let's make 2024 the chill
+            So, ditch the pretence, grab a snack, and let's make 2025 the chill
             tech hangout you'll remember.
             <br />
             See you there! 🚀
