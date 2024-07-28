@@ -19,4 +19,5 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/schedule', 'schedule');
 
     Route::get('/volunteer', 'volunteer');
+    Route::get('/sponsor', 'sponsor');
 });
