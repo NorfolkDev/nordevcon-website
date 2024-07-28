@@ -29,4 +29,9 @@ class HomeController extends Controller
     {
         return view("volunteer");
     }
+    
+    public function sponsor(Request $request): View
+    {
+        return view("sponsor");
+    }
 }
