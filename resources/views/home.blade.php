@@ -27,6 +27,7 @@
     </div>
 
     <x-tickets />
+    <x-sponsors />
     <x-discord />
     <x-testimonials />
     <x-newsletter />
