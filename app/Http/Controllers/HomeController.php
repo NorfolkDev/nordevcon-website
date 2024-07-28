@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SponsorRequest;
+use App\Services\Hubspot;
 use App\Services\Sessionize;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\View\View;
@@ -29,9 +32,27 @@ class HomeController extends Controller
     {
         return view("volunteer");
     }
-    
+
     public function sponsor(Request $request): View
     {
         return view("sponsor");
+    }
+
+    public function submitForm(SponsorRequest $request): RedirectResponse
+    {
+        $hubspot = Hubspot::submitForm(
+            $request->validated('firstname'),
+            $request->validated('lastname'),
+            $request->validated('phone'),
+            $request->validated('email')
+        );
+
+        if (!$hubspot->ok()) {
+            return redirect()
+                ->with('error', 'Unable to submit form, please contact us at conference@norfolkdevelopers.com')
+                ->back();
+        }
+
+        return redirect()->back();
     }
 }
