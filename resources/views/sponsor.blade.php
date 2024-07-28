@@ -27,8 +27,7 @@
                     <div class="aspect-w-3 aspect-h-2">
                         <img
                             class="rounded-lg object-cover shadow-lg"
-                            src="/img/sponsor_gallery_1.jpg"
-                            alt=""
+                            src="{{ Vite::asset("resources/img/sponsor_gallery_1.jpg") }}"
                         />
                     </div>
                 </li>
@@ -36,8 +35,7 @@
                     <div class="aspect-w-3 aspect-h-2">
                         <img
                             class="rounded-lg object-cover shadow-lg"
-                            src="/img/sponsor_gallery_2.jpg"
-                            alt=""
+                            src="{{ Vite::asset("resources/img/sponsor_gallery_2.jpg") }}"
                         />
                     </div>
                 </li>
@@ -45,8 +43,7 @@
                     <div class="aspect-w-3 aspect-h-2">
                         <img
                             class="rounded-lg object-cover shadow-lg"
-                            src="/img/sponsor_gallery_3.jpg"
-                            alt=""
+                            src="{{ Vite::asset("resources/img/sponsor_gallery_3.jpg") }}"
                         />
                     </div>
                 </li>
