@@ -20,4 +20,5 @@ Route::controller(HomeController::class)->group(function () {
 
     Route::get('/volunteer', 'volunteer');
     Route::get('/sponsor', 'sponsor');
+    Route::post('/sponsor', 'submitForm');
 });
