@@ -11,8 +11,7 @@
                 <p
                     class="mt-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
                 >
-                    Crab your ticket now! <br/>
-                    With a <span class="font-extrabold">70%</span> Super Early Bird Discount!
+                    Crab 🦀 your ticket now!
                 </p>
 
                 <p
@@ -36,7 +35,7 @@
             >
                 <x-tickets.item
                     title="Thursday Ticket"
-                    price="£36"
+                    price="£72"
                     rrp="£120"
                     description="Our development day, 3 tracks with a focus on the technical, new frameworks, new languages and new features"
                     :features="['Frontend Development' , 'Backend Development' , 'System engineering & DevOps' ]"
@@ -49,7 +48,7 @@
             >
                 <x-tickets.item
                     title="Friday Ticket"
-                    price="£63"
+                    price="£126"
                     rrp="£210"
                     description="Our mixed day, 3 tracks, one on development, another on business & wellbeing, and our community spotlight track"
                     :features="['Software Development' , 'Career & Wellbeing', 'Business' ]"
@@ -64,7 +63,7 @@
             <div class="flex flex-1 flex-col">
                 <x-tickets.item
                     title="Full Ticket"
-                    price="£90"
+                    price="£180"
                     rrp="£300"
                     description="Access to both days, and the networking events surrounding the conference!"
                     :features="['All the things' , '+ Networking events' , '+ Wine reception'   ]"
