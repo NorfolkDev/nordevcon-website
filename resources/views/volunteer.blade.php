@@ -18,6 +18,11 @@
                 />
 
                 <div class="prose max-w-none px-4 py-2">
+                    <h2 class="mb-4 text-3xl font-black tracking-wide lg:mb-8 lg:text-6xl">
+                        Volunteer applications has now closed
+                    </h2>
+
+
                     <h2>Join Our Team of Volunteers</h2>
 
                     <p>
@@ -199,15 +204,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div>
-                <a
-                    href="https://airtable.com/appNp9z5teUfhU1lf/shrD4Qm2Z030eeGxY"
-                    class="flex items-center justify-center rounded-md border border-transparent bg-wave-orange px-5 py-3 text-lg font-extrabold text-white ring-4 ring-wave-orange/75 transition-all hover:ring-8 lg:text-2xl"
-                    target="_blank"
-                >
-                    Apply to volunteer
-                </a>
             </div>
         </div>
     </div>
