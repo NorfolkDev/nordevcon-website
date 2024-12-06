@@ -27,6 +27,7 @@
     </div>
 
     <x-tickets />
+    <x-workshops />
     <x-sponsors />
     <x-discord />
     <x-testimonials />
