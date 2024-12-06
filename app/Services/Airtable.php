@@ -12,6 +12,10 @@ class Airtable
 {
     public static function getSponsors(?int $ttl = 10_800): Collection
     {
+        if (app()->isLocal()) {
+            $ttl = 0;
+        }
+
         $data = Cache::remember('airtable_sponsors', $ttl, function () {
             $response = Http::withToken(config('services.airtable.key'))->get('https://api.airtable.com/v0/appNp9z5teUfhU1lf/Sponsors');
 

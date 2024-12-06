@@ -12,6 +12,10 @@ class Sessionize
 {
     public static function getSessions(?int $ttl = 10_800): Schedule
     {
+        if (app()->isLocal()) {
+            $ttl = 0;
+        }
+
         $data = Cache::remember('sessionize_sessions', $ttl, function () {
             $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart');
 
@@ -29,6 +33,10 @@ class Sessionize
 
     public static function getSpeakers(?int $ttl = 10_800): Speakers
     {
+        if (app()->isLocal()) {
+            $ttl = 0;
+        }
+
         $data = Cache::remember('sessionize_speakers', $ttl, function () {
             $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/Speakers');
 
