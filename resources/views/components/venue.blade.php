@@ -56,7 +56,7 @@
                     target="_blank">
 
                     <span
-                        class="absolute m-6 h-12 w-12 bottom-0 right-0 text-gray-400 opacity-0 group-hover:opacity-90">
+                        class="absolute m-6 h-20 w-20 bottom-0 right-0 p-2 text-wave-orange bg-wave-orange/20 rounded-full opacity-0 group-hover:opacity-90">
                         <x-icons.magnifying-glass />
                     </span>
                     <img src="{{ Vite::asset('resources/img/map-ground-floor.jpg') }}" />
@@ -71,7 +71,7 @@
                 </p>
                 <a class="relative group" href="{{ Vite::asset('resources/img/map-first-floor.jpg') }}" target="_blank">
                     <span
-                        class="absolute m-6 h-12 w-12 bottom-0 right-0 text-gray-400 opacity-0 group-hover:opacity-90">
+                        class="absolute m-6 h-20 w-20 bottom-0 right-0 p-2 text-wave-orange bg-wave-orange/20 rounded-full opacity-0 group-hover:opacity-90">
                         <x-icons.magnifying-glass />
                     </span>
 
