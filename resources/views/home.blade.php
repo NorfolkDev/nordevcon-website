@@ -9,6 +9,7 @@
 
     <x-expect />
     <x-timeline />
+    <x-gallery />
     <x-venue />
 
     <div class="relative mx-auto my-12 w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8" x-data="{ favourites: $persist([]) }">

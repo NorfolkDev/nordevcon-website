@@ -23,6 +23,8 @@ return [
 
     'sponsor_apply_url' => 'https://airtable.com/appNp9z5teUfhU1lf/shrjMroNLakaWsYxr',
 
+    'gallery_url' => 'https://photos.app.goo.gl/PQQCzfGxCWjjhwgP9',
+
     'brand_color' => '#44337a',
 
     'attendees' => '~450',
