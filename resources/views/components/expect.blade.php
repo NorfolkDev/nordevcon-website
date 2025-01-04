@@ -4,9 +4,7 @@
             What to expect
         </h4>
 
-        <ol
-            class="my-6 divide-y-2 lg:my-12 lg:grid lg:grid-cols-2 lg:divide-y-0"
-        >
+        <ol class="my-6 divide-y-2 lg:my-12 lg:grid lg:grid-cols-2 lg:divide-y-0">
             <li class="flex py-2">
                 <div>
                     <x-illustration.community class="w-36" />
@@ -60,17 +58,19 @@
                 <div>
                     <p class="mb-1 font-black">Networking... but *fun*</p>
                     <p>
-                        No forced handshakes or awkward exchanges here. It's all
-                        about making connections in a way that feels natural.
-                        Chat with speakers, meet fellow attendees, and who knows
-                        - you might just find your next project buddy.
+                        We don’t do formal so you won’t see any forced handshakes
+                        or awkward exchanges here. This is networking with a
+                        difference. We know the conference is about making
+                        connections in a way that feels natural. Take the
+                        opportunity to chat with speakers, meet fellow attendees,
+                        and who knows - you might just find your next project buddy.
                     </p>
                 </div>
             </li>
         </ol>
         <p class="mb-6 py-2 font-condensed text-2xl lg:mb-12">
-            So, ditch the pretence, grab a snack, and let's make 2025 the chill
-            tech hangout you'll remember.
+            So, be yourself, grab a snack, and we’ll all join together in creating
+            the best tech event on the calendar.
             <br />
             See you there! 🚀
         </p>
