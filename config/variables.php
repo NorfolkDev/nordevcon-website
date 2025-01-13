@@ -32,4 +32,6 @@ return [
     'venue' => 'Kings Centre',
 
     'location' => 'Norwich',
+
+    'sessionize_id' => 'o83377ey',
 ];

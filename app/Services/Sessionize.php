@@ -17,7 +17,8 @@ class Sessionize
         }
 
         $data = Cache::remember('sessionize_sessions', $ttl, function () {
-            $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/GridSmart');
+            $sessionize_id = config('variables.sessionize_id');
+            $response = Http::get("https://sessionize.com/api/v2/$sessionize_id/view/GridSmart");
 
             if (! $response->ok()) {
                 throw new Error('Error getting sessions from Sessionize');
@@ -38,7 +39,8 @@ class Sessionize
         }
 
         $data = Cache::remember('sessionize_speakers', $ttl, function () {
-            $response = Http::get('https://sessionize.com/api/v2/6rdd3z2a/view/Speakers');
+            $sessionize_id = config('variables.sessionize_id');
+            $response = Http::get("https://sessionize.com/api/v2/$sessionize_id/view/Speakers");
 
             if (! $response->ok()) {
                 throw new Error('Error getting speakers from Sessionize');
