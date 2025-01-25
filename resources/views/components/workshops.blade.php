@@ -27,7 +27,7 @@
             :image="Vite::asset('resources/img/workshop_typescript.jpg')"
             date="Wednesday, 26th February. 10am to 5pm"
             description="This workshop is a condensed version of Matt Pocock’s renowned TypeScript Wizard Course, designed to deliver practical, real-world knowledge in just one day. The day includes hands-on exercises, in-depth guidance on advanced TypeScript features like generics and type transformations, and plenty of time for questions."
-            label="Grab a seat for £160!"
+            label="Grab a seat for £200!"
         />
     </ul>
 </div>
