@@ -3,7 +3,7 @@
 @section('title', "Your Personal Schedule | East Anglia's Largest Developer Conference")
 
 @section("content")
-    <section id="schedule" class="space-y-4 px-4 py-12 lg:px-12 lg:py-24">
+    <section class="space-y-4 px-4 py-12 lg:px-12 lg:py-24">
         <h4 class="text-3xl font-black tracking-wide lg:text-6xl">
             Your Schedule
         </h4>
