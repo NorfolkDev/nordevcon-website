@@ -35,8 +35,7 @@
             >
                 <x-tickets.item
                     title="Thursday Ticket"
-                    price="£72"
-                    rrp="£120"
+                    price="£120"
                     description="Our development day, 3 tracks with a focus on the technical, new frameworks, new languages and new features"
                     :features="['Frontend Development' , 'Backend Development' , 'System engineering & DevOps' ]"
                     href="https://ti.to/norfolkdevelopers/nordevcon-25/"
@@ -48,8 +47,7 @@
             >
                 <x-tickets.item
                     title="Friday Ticket"
-                    price="£126"
-                    rrp="£210"
+                    price="£210"
                     description="Our mixed day, 3 tracks, one on development, another on business & wellbeing, and our community spotlight track"
                     :features="['Software Development' , 'Career & Wellbeing', 'Business' ]"
                     href="https://ti.to/norfolkdevelopers/nordevcon-25/"
@@ -63,8 +61,7 @@
             <div class="flex flex-1 flex-col">
                 <x-tickets.item
                     title="Full Ticket"
-                    price="£180"
-                    rrp="£300"
+                    price="£300"
                     description="Access to both days, and the networking events surrounding the conference!"
                     :features="['All the things' , '+ Networking events' , '+ Wine reception'   ]"
                     href="https://ti.to/norfolkdevelopers/nordevcon-25/"
