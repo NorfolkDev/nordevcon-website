@@ -15,9 +15,11 @@
             {{ $title }}
         </h3>
     </div>
-    <div class="mt-4 flex items-baseline text-4xl font-medium line-through">
-        {{ $rrp }}
-    </div>
+    @isset($rrp)
+        <div class="mt-4 flex items-baseline text-4xl font-medium line-through">
+            {{ $rrp }}
+        </div>
+    @endisset
     <div class="mt-1 flex items-baseline text-6xl font-extrabold">
         {{ $price }}
         <span class="ml-1 text-2xl font-medium text-gray-500">.00</span>
