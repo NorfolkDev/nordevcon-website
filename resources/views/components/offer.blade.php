@@ -20,7 +20,11 @@
 
         <div class="p-4 space-y-2 bg-slate-100 text-slate-900">
             <h4 class="text-2xl font-bold">
-                Limited Time Offer: Don't miss out on this opportunity to get 40% off TODAY!
+                OFFER ENDS TODAY!
+            </h4>
+
+            <h4 class="text-2xl font-bold">
+                Don't miss out on this opportunity to get 40% off TODAY!
             </h4>
 
             <p>
