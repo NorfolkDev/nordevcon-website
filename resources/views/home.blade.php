@@ -19,6 +19,4 @@
     <x-testimonials />
     <x-newsletter />
     <x-footer />
-
-    <x-offer />
 @endsection
