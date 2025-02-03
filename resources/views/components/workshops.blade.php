@@ -29,5 +29,22 @@
             description="This workshop is a condensed version of Matt Pocock’s renowned TypeScript Wizard Course, designed to deliver practical, real-world knowledge in just one day. The day includes hands-on exercises, in-depth guidance on advanced TypeScript features like generics and type transformations, and plenty of time for questions."
             label="Grab a seat for £200!"
         />
+
+        <x-workshops.item
+            align="right"
+            headline="Building an Expression Language from Scratch"
+            :image="Vite::asset('resources/img/workshop_generic.jpg')"
+            date="Wednesday, 26th February. 10am to 1pm"
+            description="Whether you're an aspiring language designer or just curious about how programming languages process code, this workshop will give you the foundational knowledge and hands-on experience to start building your own interpreters."
+            label="Grab a seat for just £20!"
+        />
+
+        <x-workshops.item
+            headline="Build without limits"
+            :image="Vite::asset('resources/img/workshop_generic.jpg')"
+            date="Wednesday, 26th February. 2pm to 5pm"
+            description="A deep dive into Generative AI for developers! Learn how to harness the power of AI-driven coding tools to write code faster, reduce defects, and boost your productivity."
+            label="Grab a seat for just £20!"
+        />
     </ul>
 </div>
