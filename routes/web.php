@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,10 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/volunteer', 'volunteer');
     Route::get('/sponsor', 'sponsor');
     Route::post('/sponsor', 'submitForm');
+});
+
+Route::controller(PageController::class)->group(function () {
+    Route::get('/about', 'about');
+    Route::get('/conference', 'conference');
+    Route::get('/attend', 'attend');
 });
