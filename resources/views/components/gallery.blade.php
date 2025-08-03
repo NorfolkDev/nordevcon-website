@@ -24,7 +24,7 @@
             <p>
                 <a class="block px-4 py-2 bg-wave-purple text-white font-bold rounded"
                     href="{{ config('variables.gallery_url') }}">
-                    Checkout 2024's Photo Reel
+                    Checkout 2025's Photo Reel
                 </a>
             </p>
         </li>
