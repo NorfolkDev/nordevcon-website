@@ -17,7 +17,11 @@ class Airtable
         }
 
         $data = Cache::remember('airtable_sponsors', $ttl, function () {
-            $response = Http::withToken(config('services.airtable.key'))->get('https://api.airtable.com/v0/appNp9z5teUfhU1lf/Sponsors');
+            $key = config('services.airtable.key');
+            $id = config('services.airtable.id');
+            $url = "https://api.airtable.com/v0/$id/Sponsors";
+
+            $response = Http::withToken($key)->get($url);
 
             if (! $response->ok()) {
                 throw new Error('Error getting sponsors from Airtable');

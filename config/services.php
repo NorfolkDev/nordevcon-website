@@ -32,7 +32,8 @@ return [
     ],
 
     'airtable' => [
+        'id' => env('AIRTABLE_ID'),
         'key' => env('AIRTABLE_API_KEY'),
-    ]
+    ],
 
 ];

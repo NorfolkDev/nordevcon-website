@@ -34,12 +34,27 @@
                         nor(DEV): con 2023
                     </a>
                 </li>
+                <li>
+                    <a class="underline" href="https://2024.nordevcon.com">
+                        nor(DEV): con 2024
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://2025.nordevcon.com">
+                        nor(DEV): con 2025
+                    </a>
+                </li>
             </ol>
 
             <ol>
                 <li>
-                    <a class="underline" href="https://nor.dev/twitter">
-                        Follow us on Twitter
+                    <a class="underline" href="https://nor.dev/instagram">
+                        Follow us on Instagram
+                    </a>
+                </li>
+                <li>
+                    <a class="underline" href="https://nor.dev/bluesky">
+                        Follow us on Bluesky
                     </a>
                 </li>
                 <li>
