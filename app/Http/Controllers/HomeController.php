@@ -47,12 +47,15 @@ class HomeController extends Controller
             $request->validated('email')
         );
 
-        if (!$hubspot->ok()) {
+        if (! $hubspot->ok()) {
             return redirect()
-                ->with('error', 'Unable to submit form, please contact us at conference@norfolkdevelopers.com')
-                ->back();
+                ->back()
+                ->with('error', 'Unable to submit form, please contact us at conference@norfolkdevelopers.com');
         }
 
-        return redirect()->back();
+        return redirect()
+            ->back()
+            ->with('success', 'We have received your request, check you inbox for receipt and we\'ll be in touch shortly');
+
     }
 }

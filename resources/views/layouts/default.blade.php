@@ -39,6 +39,7 @@
 
         @googlefonts(["nonce" => csp_nonce()])
         @vite("resources/css/app.css")
+        @turnstileScripts()
     </head>
 
     <body class="min-h-[100dvh] bg-gray-100">

@@ -36,4 +36,9 @@ return [
         'key' => env('AIRTABLE_API_KEY'),
     ],
 
+    'turnstile' => [
+        'key' => env('TURNSTILE_SITE_KEY'),
+        'secret' => env('TURNSTILE_SECRET_KEY'),
+    ],
+
 ];

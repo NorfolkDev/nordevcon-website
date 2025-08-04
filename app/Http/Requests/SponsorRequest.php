@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class SponsorRequest extends FormRequest
 {
@@ -22,6 +23,7 @@ class SponsorRequest extends FormRequest
     public function rules(): array
     {
         return [
+            "cf-turnstile-response" => ["required", Rule::turnstile()],
             "firstname" => "required",
             "lastname" => "required",
             "phone" => "required",
