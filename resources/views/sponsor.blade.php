@@ -53,88 +53,21 @@
 
     <div class="bg-white py-12">
         <div class="mx-auto max-w-7xl px-4">
-                <div class="grid gap-4 lg:grid-cols-12">
-                    <div class="lg:col-span-4">
-                        <h2
-                            class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
-                        >
-                            Contact Us
-                        </h2>
-                        <p
-                            class="mx-auto mt-3 max-w-4xl text-xl text-slate-700 sm:mt-5 sm:text-2xl"
-                        >
-                            Get in touch and let's talk about a conference
-                            sponsorship.
-                        </p>
-                    </div>
-
-                    <form
-                        method="POST"
-                        class="grid gap-4 overflow-hidden rounded-lg bg-slate-900 p-4 lg:col-span-8 lg:grid-cols-12 lg:gap-8 lg:p-8"
+            <div class="grid gap-4 lg:grid-cols-12">
+                <div class="lg:col-span-4">
+                    <h2
+                        class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl"
                     >
-                        @csrf
-
-                        @if ($errors->any())
-                            <ul class="col-span-12 list-disc text-wave-pink">
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        @endif
-
-                        <div class="col-span-6">
-                            <x-forms.input
-                                label="First name"
-                                name="firstname"
-                                required
-                            />
-                        </div>
-                        <div class="col-span-6">
-                            <x-forms.input
-                                label="Last name"
-                                name="lastname"
-                                required
-                            />
-                        </div>
-
-                        <div class="col-span-12">
-                            <x-forms.input
-                                label="Phone number"
-                                name="phone"
-                                required
-                            />
-                        </div>
-
-                        <div class="col-span-12">
-                            <x-forms.input
-                                label="Email address"
-                                name="email"
-                                type="email"
-                                required
-                            />
-                        </div>
-
-                        <div class="col-span-12 flex justify-end">
-                            <button
-                                type="submit"
-                                class="flex rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-bold text-white shadow focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-600 sm:px-10"
-                            >
-                                Complete application
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    fill="currentColor"
-                                    aria-hidden="true"
-                                    class="ml-4 h-6 w-6"
-                                >
-                                    <path
-                                        d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"
-                                    ></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                        Contact Us
+                    </h2>
+                    <p
+                        class="mx-auto mt-3 max-w-4xl text-xl text-slate-700 sm:mt-5 sm:text-2xl"
+                    >
+                        Get in touch and let's talk about a conference
+                        sponsorship.
+                    </p>
                 </div>
+            </div>
         </div>
     </div>
 
