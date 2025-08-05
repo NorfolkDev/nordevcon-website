@@ -34,7 +34,7 @@
             </p>
 
             <p class="pt-2 font-bold">
-                Why Attend NordevCon?
+                Why Attend nor(DEV): con?
             </p>
 
             <ul class="ml-4 list-disc">

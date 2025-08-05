@@ -1,8 +1,8 @@
 @extends("layouts.page")
 
-@section('title', "About nor(DEV):con")
+@section('title', "About Norfolk Developers aka. nor(DEV):")
 
-@section("content")
+@section("page")
     <div class="bg-gray-100">
         <div
             class="relative mx-auto my-12 w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8"
@@ -13,18 +13,23 @@
                 >
                     About Us
                 </h1>
+
+                <h2 class="italic text-gray-500">
+                    the nor(DEV): behind the nor(DEV): con
+                </h2>
+
                 <p
                     class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
                 >
-                    We are more than just a conference. We are a
-                    community-driven event dedicated to fostering growth,
-                    learning, and connection in the East Anglian tech scene.
+                    We are more than just a conference. We are a community that
+                    goes beyond the event and is dedicated to fostering growth,
+                    learning, and connection in the East Anglian tech scene all
+                    year round.
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- Story and Mission Section -->
     <div class="relative overflow-hidden bg-white py-16">
         <div class="relative px-4 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-prose text-lg">
@@ -37,7 +42,7 @@
                     <span
                         class="mt-2 block text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
                     >
-                        A Passion for Tech in Norfolk
+                        A Passion for Tech & Community in Norfolk
                     </span>
                 </h2>
                 <p class="mt-8 text-xl leading-8 text-gray-500">
@@ -62,7 +67,6 @@
         </div>
     </div>
 
-    <!-- Values Section -->
     <div class="bg-gray-50 py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="text-center">
@@ -107,9 +111,16 @@
                         </dt>
                         <dd class="ml-16 mt-2 text-base text-gray-500">
                             We work hard to create a welcoming space for
-                            everyone. In 2024 alone, we provided 54 free student
-                            tickets and 15 scholarship tickets to ensure that
-                            cost is never a barrier to learning and connection.
+                            everyone. In 2024 alone, we provided over 50 free
+                            student tickets and 15
+                            <a
+                                href="/attend#scholarship"
+                                class="text-wave-purple hover:underline"
+                            >
+                                scholarship tickets
+                            </a>
+                            to ensure that cost is never a barrier to learning
+                            and connection.
                         </dd>
                     </div>
 
@@ -144,7 +155,8 @@
                             We are a not-for-profit company. We publish a
                             detailed financial breakdown of our costs and income
                             after each conference. Any surplus is reinvested
-                            directly into the community.
+                            directly into the community & events throughout the
+                            year.
                         </dd>
                     </div>
 
@@ -187,54 +199,122 @@
         </div>
     </div>
 
-    <!-- Team Section -->
     <div class="bg-white py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    The Organising Team
-                </h2>
-                <p class="mt-4 text-lg text-gray-500">
-                    nordevcon is powered by passion. We're a small team of
-                    volunteers from the Norfolk Developers community who
-                    dedicate our time to making this event happen.
-                </p>
-                {{-- Grid of photos and short bios for each team member --}}
+            <div
+                class="flex flex-col items-center gap-16 md:flex-row md:items-start"
+            >
+                <div
+                    class="flex w-full justify-center md:w-1/3 md:justify-start"
+                >
+                    <img
+                        src="{{ Vite::asset("resources/img/mez-and-alex.jpg") }}"
+                        alt="Mez and Alex, members of the organising team"
+                        class="aspect-square h-auto w-full max-w-xs rounded-lg object-cover shadow-lg md:aspect-auto"
+                    />
+                </div>
+                <div class="w-full md:w-2/3">
+                    <div class="text-center md:text-left">
+                        <h2
+                            class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                        >
+                            The Organising Team
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-500">
+                            Norfolk Developers is powered by passion and a
+                            desire to see the community thrive. We're a small
+                            team of volunteers who dedicate time to nurturing
+                            the community that has helped in their own growth.
+                        </p>
+                    </div>
+                    <ul class="mt-10 space-y-10">
+                        <li class="text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                Alex Barfield
+                            </h3>
+                            <p class="mt-2 text-lg text-wave-purple">
+                                Lead Organiser
+                            </p>
+                            <p class="mt-4 text-base text-gray-500">
+                                As a freelance software developer, Alex found
+                                connection & support in the community when
+                                originally joining Norfolk Developers in 2014.
+                                Determined to maintain this community passion he
+                                was keen to step up and continue in Paul's
+                                stead. Since 2019, Alex has been passionate
+                                about creating a platform for developers to
+                                share knowledge, learn new skills, and connect
+                                with their peers.
+                            </p>
+
+                            <a
+                                class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-medium text-white hover:bg-wave-pink sm:w-auto"
+                                href="http://linkedin.com/in/alexscotton/"
+                            >
+                                Connect with Alex on LinkedIn
+                            </a>
+                        </li>
+
+                        <li class="text-center md:text-left">
+                            <h3 class="text-2xl font-bold text-gray-900">
+                                Mary-Anne Barfield
+                            </h3>
+                            <p class="mt-2 text-lg text-wave-purple">
+                                Co-Organiser
+                            </p>
+                            <p class="mt-4 text-base text-gray-500">
+                                Mary-Anne is the heart of the nor(DEV):con
+                                conference. She ensures the conference is a
+                                welcoming and inclusive space for everyone.
+                                Manages our Conference volunteers and she also
+                                works to build strong relationships with our
+                                sponsors and partners, who are essential to
+                                making the event a success.
+                            </p>
+
+                            <a
+                                class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-medium text-white hover:bg-wave-pink sm:w-auto"
+                                href="https://www.linkedin.com/in/mary-anne-barfield-68058623a/"
+                            >
+                                Connect with Mary-Anne on LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Code of Conduct Section -->
+    <x-gallery />
+
     <div class="bg-wave-purple">
         <div
             class="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8"
         >
             <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-                <span class="block">Code of Conduct</span>
+                Code of Conduct
             </h2>
 
-            The Short Version Norfolk Developers are dedicated to providing an
-            harassment-free conference experience for everyone. All
-            communication should be appropriate for a professional audience
-            including people of many different backgrounds. Sexual or
-            discriminatory language and imagery is not appropriate for any of
-            the conference sessions or activities. Be kind to others. Do not
-            insult or put down other attenders. Behave professionally. Remember
-            that any discriminatory (as in sexist, racist, etc.) or exclusionary
-            jokes are not appropriate. Attendees violating these rules will be
-            asked to leave the conference without a refund at the sole
-            discretion of the conference organisers.
-            https://norfolkdevelopers.com/code-of-conduct
             <p class="mt-4 text-lg leading-6 text-indigo-200">
                 Creating a safe, respectful, and inclusive environment is our
                 highest priority. We expect all participants to adhere to our
                 Code of Conduct.
             </p>
+
+            <p class="mt-4 text-lg leading-6 text-indigo-200">
+                Be kind to others. Do not insult or put down other attenders.
+                Behave professionally. Remember that any discriminatory (as in
+                sexist, racist, etc.) or exclusionary jokes are not appropriate.
+                Attendees violating these rules will be asked to leave the
+                conference without a refund at the sole discretion of the
+                conference organisers.
+            </p>
+
             <a
-                href="#"
+                href="https://norfolkdevelopers.com/code-of-conduct"
                 class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-wave-purple hover:bg-indigo-50 sm:w-auto"
             >
-                Read the CoC
+                Read the Full CoC
             </a>
         </div>
     </div>
