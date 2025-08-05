@@ -1,4 +1,4 @@
-@extends("layouts.default")
+@extends("layouts.page")
 
 @section('title', "Volunteer at nor(DEV):con")
 
@@ -18,10 +18,11 @@
                 />
 
                 <div class="prose max-w-none px-4 py-2">
-                    <h2 class="mb-4 text-3xl font-black tracking-wide lg:mb-8 lg:text-6xl">
+                    <h2
+                        class="mb-4 text-3xl font-black tracking-wide lg:mb-8 lg:text-6xl"
+                    >
                         Volunteer applications has now closed
                     </h2>
-
 
                     <h2>Join Our Team of Volunteers</h2>
 
