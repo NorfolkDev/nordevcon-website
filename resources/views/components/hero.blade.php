@@ -4,8 +4,7 @@
     <div
         class="z-50 flex flex-col-reverse justify-between gap-4 p-8 px-16 pb-32 lg:flex-row lg:gap-8 lg:pb-36 lg:pl-32"
     >
-        <div class="hidden lg:block">
-        </div>
+        <div class="hidden lg:block"></div>
         <div class="flex flex-col items-end gap-8 text-white">
             <x-logo class="w-full max-w-sm lg:max-w-lg" />
             <p
@@ -15,52 +14,227 @@
             </p>
             <div class="flex flex-col items-end gap-4">
                 <div class="relative inline-block text-left">
-                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <button
+                        type="button"
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                        id="menu-button"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                    >
                         About
-                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        <svg
+                            class="-mr-1 h-5 w-5 text-gray-400"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd"
+                            />
                         </svg>
                     </button>
-                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="menu-button"
+                        tabindex="-1"
+                    >
                         <div class="py-1" role="none">
-                            <a href="/about" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Our Story & Mission</a>
-                            <a href="/about#values" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Our Values in Action</a>
-                            <a href="/about#team" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">The Team</a>
-                            <a href="/about#coc" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Code of Conduct</a>
+                            <a
+                                href="/about"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-0"
+                            >
+                                Our Story & Mission
+                            </a>
+                            <a
+                                href="/about#values"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-1"
+                            >
+                                Our Values in Action
+                            </a>
+                            <a
+                                href="/about#team"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-2"
+                            >
+                                The Team
+                            </a>
+                            <a
+                                href="/about#coc"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-3"
+                            >
+                                Code of Conduct
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="relative inline-block text-left">
-                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <button
+                        type="button"
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                        id="menu-button"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                    >
                         The Event
-                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        <svg
+                            class="-mr-1 h-5 w-5 text-gray-400"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd"
+                            />
                         </svg>
                     </button>
-                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="menu-button"
+                        tabindex="-1"
+                    >
                         <div class="py-1" role="none">
-                            <a href="/conference#schedule" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Schedule at a Glance</a>
-                            <a href="/conference#full-schedule" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Full Schedule</a>
-                            <a href="/conference#speakers" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Speakers</a>
-                            <a href="/conference#workshops" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Workshops</a>
-                            <a href="/conference#socials" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Socials & Networking</a>
+                            <a
+                                href="/conference#schedule"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-0"
+                            >
+                                Schedule at a Glance
+                            </a>
+                            <a
+                                href="/conference#full-schedule"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-1"
+                            >
+                                Full Schedule
+                            </a>
+                            <a
+                                href="/conference#speakers"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-2"
+                            >
+                                Speakers
+                            </a>
+                            <a
+                                href="/conference#workshops"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-3"
+                            >
+                                Workshops
+                            </a>
+                            <a
+                                href="/conference#socials"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-4"
+                            >
+                                Socials & Networking
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="relative inline-block text-left">
-                    <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-.bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                    <button
+                        type="button"
+                        class="bg-.bg-white inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                        id="menu-button"
+                        aria-expanded="true"
+                        aria-haspopup="true"
+                    >
                         Attend
-                        <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        <svg
+                            class="-mr-1 h-5 w-5 text-gray-400"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd"
+                            />
                         </svg>
                     </button>
-                    <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div
+                        class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu"
+                        aria-orientation="vertical"
+                        aria-labelledby="menu-button"
+                        tabindex="-1"
+                    >
                         <div class="py-1" role="none">
-                            <a href="/attend#tickets" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Tickets & Pricing</a>
-                            <a href="/attend#scholarship" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Scholarship Program</a>
-                            <a href="/attend#venue" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Venue & Travel</a>
-                            <a href="/attend#why-attend" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Why Attend?</a>
-                            <a href="/attend#convince-boss" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Convince Your Boss</a>
+                            <a
+                                href="/attend#tickets"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-0"
+                            >
+                                Tickets & Pricing
+                            </a>
+                            <a
+                                href="/attend#scholarship"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-1"
+                            >
+                                Scholarship Program
+                            </a>
+                            <a
+                                href="/attend#venue"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-2"
+                            >
+                                Venue & Travel
+                            </a>
+                            <a
+                                href="/attend#why-attend"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-3"
+                            >
+                                Why Attend?
+                            </a>
+                            <a
+                                href="/attend#convince-boss"
+                                class="block px-4 py-2 text-sm text-gray-700"
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-4"
+                            >
+                                Convince Your Boss
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -82,60 +256,7 @@
         </div>
     </div>
 
-    <svg viewBox="0 0 1584 181" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M33.088 87.9715L0 87.3543V8.48822L33.088 14.5198C66.352 20.4455 132.528 32.5087 198.528 29.6516C264.528 26.7946 330.352 9.22894 396.352 3.19737C462.352 -2.83421 528.528 2.87991 594.528 6.58351C660.528 10.2871 726.352 11.9802 792.352 18.8583C858.352 25.7364 924.528 37.7995 990.528 42.0322C1056.53 46.2649 1122.35 42.6671 1188.35 40.5508C1254.35 38.4344 1320.53 37.7995 1386.53 31.5563C1452.53 25.4189 1518.35 13.7791 1551.09 7.95913L1584 2.1392V93.5269L1551.09 86.9839C1518.35 80.3175 1452.53 67.2317 1386.53 72.9104C1320.53 78.7127 1254.35 103.403 1188.35 112.045C1122.35 120.686 1056.53 113.279 990.528 107.724C924.528 102.168 858.352 98.4649 792.352 91.0578C726.352 83.6507 660.528 72.5401 594.528 75.9967C528.528 79.5768 462.352 97.6008 396.352 102.539C330.352 107.477 264.528 99.3291 198.528 94.5145C132.528 89.8233 66.352 88.5888 33.088 87.9715Z"
-            fill="#53345D"
-        />
-    </svg>
-
-    <svg
-        class="absolute top-0 z-40"
-        viewBox="0 0 1584 181"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M0 32.4882L33.088 38.5198C66.352 44.4456 132.528 56.5087 198.528 53.6516C264.528 50.7946 330.352 33.2289 396.352 27.1974C462.352 21.1658 528.528 26.8799 594.528 30.5835C660.528 34.2871 726.352 35.9802 792.352 42.8583C858.352 49.7364 924.528 61.7996 990.528 66.0322C1056.53 70.2649 1122.35 66.6671 1188.35 64.5508C1254.35 62.4345 1320.53 61.7996 1386.53 55.5563C1452.53 49.419 1518.35 37.7791 1551.09 31.9591L1584 26.1392V0C1584 0 1583.82 0 1551.09 0C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0L0 0L0 32.4882Z"
-            fill="#0F172A"
-        />
-    </svg>
-
-    <svg
-        class="absolute top-0 z-30"
-        viewBox="0 0 1584 181"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M0 87.3543L33.088 87.9715C66.352 88.5888 132.528 89.8233 198.528 94.5145C264.528 99.3291 330.352 107.477 396.352 102.539C462.352 97.6008 528.528 79.5768 594.528 75.9967C660.528 72.5401 726.352 83.6507 792.352 91.0578C858.352 98.4649 924.528 102.168 990.528 107.724C1056.53 113.279 1122.35 120.686 1188.35 112.045C1254.35 103.403 1320.53 78.7127 1386.53 72.9104C1452.53 67.2317 1518.35 80.3175 1551.09 86.9839L1584 93.5269V0H0V87.3543Z"
-            fill="#53345D"
-        />
-    </svg>
-
-    <svg
-        class="absolute top-0 z-20"
-        viewBox="0 0 1584 181"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M0 109.5L33.088 106.5C88 103.5 131.5 105.5 196.5 113C262.5 118.556 330.352 121.078 396.352 127.298C462.352 133.517 528.528 136.337 594.528 136.171C660.528 136.005 726.352 133.02 792.352 130.946C858.352 128.873 924.528 127.712 990.528 128.707C1056.53 129.702 1122.35 132.688 1188.35 131.859C1254.35 131.029 1320.53 126.385 1386.53 129.371C1452.53 132.439 1518.35 143.22 1551.09 148.61L1584 154V0H1551.09C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0H0V109.5Z"
-            fill="#AC4B74"
-        />
-    </svg>
-
-    <svg
-        class="absolute top-0 z-10"
-        viewBox="0 0 1584 181"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M0 141.509L33.088 143.155C66.352 144.8 132.528 148.091 198.528 151.135C264.528 154.097 330.352 156.894 396.352 160.596C462.352 164.299 528.528 168.906 594.528 169.482C660.528 170.058 726.352 166.438 792.352 158.21C858.352 149.983 924.528 137.149 990.528 132.459C1056.53 127.77 1122.35 131.39 1188.35 139.452C1254.35 147.515 1320.53 164.349 1386.53 172C1452.53 179.651 1449.26 179.684 1482 181H1584V0H1551.09C1518.35 0 1452.53 0 1386.53 0C1320.53 0 1254.35 0 1188.35 0C1122.35 0 1056.53 0 990.528 0C924.528 0 858.352 0 792.352 0C726.352 0 660.528 0 594.528 0C528.528 0 462.352 0 396.352 0C330.352 0 264.528 0 198.528 0C132.528 0 66.352 0 33.088 0H0V141.509Z"
-            fill="#FA7268"
-        />
-    </svg>
+    <x-wave />
 
     <img
         class="absolute bottom-1/2 z-50 max-w-[50vw] lg:max-w-[30vw]"
