@@ -1,8 +1,8 @@
-@extends("layouts.default")
+@extends("layouts.page")
 
 @section('title', "Sponsor nor(DEV):con")
 
-@section("content")
+@section("page")
     <div class="mx-auto max-w-7xl px-4 py-12">
         <h2 class="mb-8 text-3xl font-bold tracking-tight text-gray-900">
             Sponsor nor(DEV):con
