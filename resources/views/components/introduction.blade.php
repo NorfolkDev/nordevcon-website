@@ -2,7 +2,7 @@
     <div aria-hidden="true" class="absolute hidden h-full w-1/2 bg-gray-100 lg:block"></div>
     <div class="relative bg-gray-100 lg:bg-transparent">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8">
-            <div class="mx-auto max-w-2xl pb-12 pt-16 lg:max-w-none lg:pb-32 lg:pt-32">
+            <div class="mx-auto max-w-2xl pt-[8vw] pb-12 lg:max-w-none lg:pb-32">
                 <div class="lg:pr-16">
                     <h1 class="mb-8 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
                         Three days of tech in the heart ❤️ of Norwich
