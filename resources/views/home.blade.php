@@ -8,8 +8,9 @@
     <x-introduction />
 
     <x-expect />
+    <x-testimonials />
     <x-gallery />
-    <x-venue />
+
     <div
         class="relative mx-auto my-12 w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8"
     >
@@ -31,7 +32,6 @@
     </div>
     <x-sponsors />
     <x-discord />
-    <x-testimonials />
     <x-newsletter />
     <x-footer />
 @endsection

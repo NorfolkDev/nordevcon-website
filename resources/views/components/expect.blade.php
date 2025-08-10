@@ -4,7 +4,9 @@
             What to expect
         </h4>
 
-        <ol class="my-6 divide-y-2 lg:my-12 lg:grid lg:grid-cols-2 lg:divide-y-0">
+        <ol
+            class="my-6 divide-y-2 lg:my-12 lg:grid lg:grid-cols-2 lg:divide-y-0"
+        >
             <li class="flex py-2">
                 <div>
                     <x-illustration.community class="w-36" />
@@ -43,10 +45,10 @@
                         Engaging and Informative Talks
                     </p>
                     <p>
-                        Our sessions cover a diverse range of topics, from the
-                        latest technological advancements to practical insights
-                        into industry trends. Whether you're interested in
-                        coding, development methodologies, or the broader tech
+                        Our sessions cover diverse topics, from the latest
+                        technological advances to practical insights into
+                        industry trends. Whether you're interested in coding,
+                        development methodologies, or the broader tech
                         landscape, there's something for everyone.
                     </p>
                 </div>
@@ -58,19 +60,19 @@
                 <div>
                     <p class="mb-1 font-black">Networking... but *fun*</p>
                     <p>
-                        We don’t do formal so you won’t see any forced handshakes
-                        or awkward exchanges here. This is networking with a
-                        difference. We know the conference is about making
-                        connections in a way that feels natural. Take the
-                        opportunity to chat with speakers, meet fellow attendees,
-                        and who knows - you might just find your next project buddy.
+                        We don’t do formal so you won’t see forced handshakes or
+                        awkward exchanges here. This is networking with a
+                        difference. It's an opportunity to make connections in a
+                        way that feels natural to you. Take time to chat with
+                        speakers, meet fellow attendees and - who knows - you
+                        might just find your next project buddy.
                     </p>
                 </div>
             </li>
         </ol>
         <p class="mb-6 py-2 font-condensed text-2xl lg:mb-12">
-            So, be yourself, grab a snack, and we’ll all join together in creating
-            the best tech event on the calendar.
+            So, be yourself, grab a snack, and we’ll all join together in
+            creating the best tech event on the calendar.
             <br />
             See you there! 🚀
         </p>

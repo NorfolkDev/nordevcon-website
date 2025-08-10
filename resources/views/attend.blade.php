@@ -108,34 +108,20 @@
     </div>
 
     <div class="bg-white py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2
-                    class="text-base font-semibold uppercase tracking-wide text-wave-purple"
-                >
-                    Venue & Travel
-                </h2>
-                <p
-                    class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
-                >
-                    The King's Centre, Norwich
-                </p>
-                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                    The King's Centre is conveniently located in the heart of
-                    Norwich, a short walk from the train station and major bus
-                    routes. The venue is fully accessible.
-                </p>
-                <div class="mt-6">
-                    <a
-                        href="/conference#full-schedule"
-                        class="hover:bg-wave-purple-dark inline-flex items-center justify-center rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-medium text-white"
-                    >
-                        See the schedule
-                    </a>
-                </div>
-                {{-- @TODO: Embedded Google Map --}}
-            </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:text-center">
+            <h2
+                class="text-base font-semibold uppercase tracking-wide text-wave-purple"
+            >
+                The Venue
+            </h2>
+            <p
+                class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+            >
+                King's Conference Centre, Kings Street, Norwich
+            </p>
         </div>
+
+        <x-venue />
     </div>
 
     <div class="bg-gray-50 py-20">
