@@ -9,7 +9,8 @@
         >
             <x-tickets.item
                 title="Thursday Ticket"
-                price="£120"
+                price="£36"
+                rrp="£120"
                 description="Our development day, 3 tracks with a focus on the technical, new frameworks, new languages and new features"
                 :features="['Frontend Development' , 'Backend Development' , 'System engineering & DevOps' ]"
                 :href="config('variables.ticket_url')"
@@ -21,7 +22,8 @@
         >
             <x-tickets.item
                 title="Friday Ticket"
-                price="£210"
+                price="£63"
+                rrp="£210"
                 description="Our mixed day, 3 tracks, one on development, another on business & wellbeing, and our community spotlight track"
                 :features="['Software Development' , 'Career & Wellbeing', 'Business' ]"
                 :href="config('variables.ticket_url')"
@@ -30,12 +32,13 @@
     </div>
 
     <div
-        class="col-span-3 flex overflow-hidden rounded-lg shadow-lg lg:col-span-1"
+        class="col-span-3 row-start-1 flex overflow-hidden rounded-lg shadow-lg lg:col-span-1 lg:row-start-auto"
     >
         <div class="flex flex-1 flex-col">
             <x-tickets.item
                 title="Full Ticket"
-                price="£300"
+                price="£130"
+                rrp="£300"
                 description="Access to both days, and the networking events surrounding the conference!"
                 :features="['All the things' , '+ Networking events' , '+ Wine reception'   ]"
                 :href="config('variables.ticket_url')"
