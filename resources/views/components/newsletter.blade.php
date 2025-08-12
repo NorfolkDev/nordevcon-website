@@ -2,7 +2,7 @@
     <div class="relative sm:py-16">
         <div aria-hidden="true" class="hidden sm:block">
             <div
-                class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-wave-pink"
+                class="bg-move absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-gradient-to-br from-wave-purple via-wave-pink to-wave-orange"
             ></div>
             <svg
                 class="absolute left-1/2 top-8 -ml-3 text-wave-orange"
