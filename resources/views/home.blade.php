@@ -11,6 +11,8 @@
     <x-testimonials />
     <x-gallery />
 
+    <x-tickets />
+
     <div
         class="relative mx-auto my-12 w-full px-4 sm:px-6 lg:max-w-7xl lg:px-8"
     >
