@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
+
     <x-sponsors />
     <x-discord />
     <x-newsletter />

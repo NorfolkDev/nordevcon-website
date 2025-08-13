@@ -16,7 +16,7 @@
 
             <a
                 href="{{ config("variables.ticket_url") }}"
-                class="hover:ring-wave-orange-75 mt-4 w-full rounded bg-wave-orange px-4 py-2 text-center text-3xl font-black text-slate-900 ring-4 ring-wave-orange/50 transition-all hover:ring-8 md:w-auto md:text-left"
+                class="hover:ring-wave-orange-75 mt-4 w-full rounded bg-wave-orange px-4 py-2 text-center text-3xl font-black text-slate-900 ring-4 ring-wave-orange/50 transition-all hover:ring-8 md:w-auto lg:w-auto md:text-left"
             >
                 Get your ticket!!
             </a>

@@ -28,4 +28,5 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/about', 'about');
     Route::get('/conference', 'conference');
     Route::get('/attend', 'attend');
+    Route::get('/speak', 'speak');
 });

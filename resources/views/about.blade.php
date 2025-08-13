@@ -15,7 +15,7 @@
                 </h1>
 
                 <h2 class="italic text-gray-500">
-                    the nor(DEV): behind the nor(DEV): con
+                    the nor(DEV): in nor(DEV): con
                 </h2>
 
                 <p

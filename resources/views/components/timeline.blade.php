@@ -39,10 +39,6 @@
     </ul>
 
     <div class="mx-auto w-full max-w-2xl text-slate-900 lg:max-w-none xl:w-1/2">
-        <h4 class="mb-4 text-3xl font-black tracking-wide lg:text-6xl">
-            What's the plan?
-        </h4>
-
         <ol role="list" class="mt-6 space-y-6">
             @foreach ($timeline as $entry)
                 <x-timeline.item :entry="$entry" />

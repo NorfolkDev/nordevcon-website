@@ -23,43 +23,7 @@
         </div>
     </div>
 
-    <!-- Event Structure Section -->
     <div class="bg-white py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Event Structure
-                </h2>
-                <p class="mt-4 text-lg text-gray-500">
-                    Here's what you can expect from nor(DEV): con 2026.
-                </p>
-            </div>
-            <div class="mt-10 grid gap-10 sm:grid-cols-1 md:grid-cols-3">
-                <div class="rounded-lg border border-gray-200 p-8 text-center">
-                    <h3 class="text-xl font-bold">Day 1: Workshop Day</h3>
-                    <p class="mt-2 text-base text-gray-500">
-                        Deep-dive, hands-on learning with expert instructors.
-                    </p>
-                </div>
-                <div class="rounded-lg border border-gray-200 p-8 text-center">
-                    <h3 class="text-xl font-bold">Day 2: Conference Day 1</h3>
-                    <p class="mt-2 text-base text-gray-500">
-                        A full day of talks across multiple tracks, plus our
-                        opening keynote.
-                    </p>
-                </div>
-                <div class="rounded-lg border border-gray-200 p-8 text-center">
-                    <h3 class="text-xl font-bold">Day 3: Conference Day 2</h3>
-                    <p class="mt-2 text-base text-gray-500">
-                        More talks, panels, and our closing keynote.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Workshops Section -->
-    <div class="bg-gray-50 py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h2
@@ -83,8 +47,7 @@
         </div>
     </div>
 
-    <!-- Speakers Section -->
-    <div class="bg-white py-20">
+    <div class="bg-gray-50 py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h2
@@ -103,28 +66,18 @@
                     and from our own backyard to share their real-world
                     expertise.
                 </p>
-            </div>
-            {{-- Full, filterable gallery of all speaker profiles would be displayed here. --}}
-        </div>
-    </div>
-
-    <!-- Schedule Section -->
-    <div class="bg-gray-50 py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Full Schedule
-                </h2>
-                <p class="mt-4 text-lg text-gray-500">
-                    Coming Soon! Follow us on social media for the latest
-                    updates.
-                </p>
-                {{-- Placeholder for the detailed, filterable schedule grid. --}}
+                <div class="mt-6">
+                    <a
+                        href="/speak"
+                        class="hover:bg-wave-purple-dark inline-flex items-center justify-center rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-medium text-white"
+                    >
+                        Learn more about speaking at nor(DEV): con
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Socials and Networking -->
     <div class="bg-white py-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
@@ -144,6 +97,30 @@
                     you connect with your fellow attendees.
                 </p>
             </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2
+                    class="text-base font-semibold uppercase tracking-wide text-wave-purple"
+                >
+                    The Timeline
+                </h2>
+                <p
+                    class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+                >
+                    What's the plan?
+                </p>
+            </div>
+            <x-timeline />
+        </div>
+    </div>
+
+    <div class="bg-white py-4">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <x-discord />
         </div>
     </div>
 

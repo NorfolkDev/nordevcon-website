@@ -9,7 +9,7 @@
         <div class="w-1 bg-wave-orange/50"></div>
     </div>
     <div
-        class="relative flex h-8 w-8 flex-none items-center justify-center bg-gray-100"
+        class="relative flex h-8 w-8 flex-none items-center justify-center bg-gray-50"
     >
         <div
             class="h-6 w-6 rounded-full bg-wave-orange ring-2 ring-wave-orange/75"
@@ -19,7 +19,7 @@
         <h4 class="font-black">{{ $entry->headline }}</h4>
         <time
             datetime="{{ $entry->datetime->toIso8601String() }}"
-            class="block mb-2 text-sm font-bold leading-5 text-slate-900"
+            class="mb-2 block text-sm font-bold leading-5 text-slate-900"
         >
             {{ $entry->datetime->isoFormat("ddd, Do MMM h:mma") }}
         </time>
