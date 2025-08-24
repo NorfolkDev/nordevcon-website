@@ -24,7 +24,8 @@ class Airtable
             $response = Http::withToken($key)->get($url);
 
             if (! $response->ok()) {
-                throw new Error('Error getting sponsors from Airtable');
+                return [];
+                // throw new Error('Error getting sponsors from Airtable');
             }
 
             return $response->json()['records'];
