@@ -21,6 +21,8 @@ return [
 
     'ticket_url' => 'https://ti.to/norfolkdevelopers/nordevcon-26',
 
+    'cfp_url' => 'https://sessionize.com/norfolk-developers-conference-2026',
+
     'gallery_url' => 'https://photos.app.goo.gl/APi9oZQ97CWtjUAL6',
 
     'brand_color' => '#44337a',

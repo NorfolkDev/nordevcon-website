@@ -23,7 +23,7 @@
     </div>
 
     <div class="bg-white py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:text-center">
             <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                 A conference built by the community, for the community. Speaking
                 with us is an opportunity to share your passion and expertise
@@ -39,6 +39,14 @@
                 con, you become a part of a friendly, supportive, and curious
                 community.
             </p>
+            <div class="mt-6">
+                <a
+                    href="{{ config("variables.cfp_url") }}"
+                    class="hover:bg-wave-purple-dark inline-flex items-center justify-center rounded-md border border-transparent bg-wave-purple px-5 py-3 text-base font-medium text-white"
+                >
+                    Apply to talk
+                </a>
+            </div>
         </div>
     </div>
 
