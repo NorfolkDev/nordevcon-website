@@ -7,7 +7,9 @@ return [
      * The google-fonts:fetch command will prefetch these fonts.
      */
     'fonts' => [
-        'default' => 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900',
+        'default' => 'https://fonts.googleapis.com/css2?'.
+            'family=Montserrat:ital,wght@0,100..900;1,100..900'.
+            '&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900',
     ],
 
 ];
