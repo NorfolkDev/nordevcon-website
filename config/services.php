@@ -41,4 +41,9 @@ return [
         'secret' => env('TURNSTILE_SECRET_KEY'),
     ],
 
+    'tito' => [
+        'account' => env('TITO_ACCOUNT_SLUG', 'norfolkdevelopers'),
+        'event' => env('TITO_EVENT_SLUG', 'nordevcon-26'),
+        'key' => env('TITO_API_KEY'),
+    ],
 ];

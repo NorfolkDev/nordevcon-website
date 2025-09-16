@@ -4,7 +4,7 @@
     @unless (request()->is("/"))
         <a
             href="/"
-            class="px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap"
+            class="whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg"
         >
             Home
         </a>
@@ -12,38 +12,47 @@
 
     <a
         href="/about"
-        @class(["px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap", "text-wave-orange" => request()->is("about")])
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("about")])
     >
         About Us
     </a>
     <a
         href="/conference"
-        @class(["px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap", "text-wave-orange" => request()->is("conference")])
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("conference")])
     >
         What to expect?
     </a>
     <a
         href="/attend"
-        @class(["px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap", "text-wave-orange" => request()->is("attend")])
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("attend")])
     >
         Attend
     </a>
     <a
         href="/speak"
-        @class(["px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap", "text-wave-orange" => request()->is("speak")])
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("speak")])
     >
         Speak
     </a>
     <a
         href="/sponsor"
-        @class(["px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap", "text-wave-orange" => request()->is("sponsor")])
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("sponsor")])
     >
         Sponsor
     </a>
+    @guest
     <a
-        href="https://nor.dev/posts"
-        class="px-4 py-1 md:py-0 text-sm md:text-lg font-bold transition-colors hover:text-wave-orange text-left md:text-center whitespace-nowrap"
+        href="/login"
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("login")])
     >
-        News
+        Login
     </a>
+    @else
+    <a
+        href="/dashboard"
+        @class(["whitespace-nowrap px-4 py-1 text-left text-sm font-bold transition-colors hover:text-wave-orange md:py-0 md:text-center md:text-lg", "text-wave-orange" => request()->is("dashboard")])
+    >
+        Dashboard
+    </a>
+    @endguest
 </div>
