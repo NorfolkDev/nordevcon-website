@@ -33,6 +33,8 @@
         </div>
     </div>
 
+    <x-schedule />
+
     <x-sponsors />
     <x-discord />
     <x-newsletter />
