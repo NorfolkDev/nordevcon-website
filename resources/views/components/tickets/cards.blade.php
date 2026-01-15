@@ -7,27 +7,31 @@
         <div
             class="flex flex-1 flex-grow flex-col border-b-2 border-gray-700 lg:border-b-0 lg:border-r-2"
         >
-            <x-tickets.item
-                title="Thursday Ticket"
-                price="£36"
-                rrp="£120"
-                description="Our development day, 3 tracks with a focus on the technical, new frameworks, new languages and new features"
-                :features="['Frontend Development' , 'Backend Development' , 'System engineering & DevOps' ]"
-                :href="config('variables.ticket_url')"
-            />
+            @if(isset($tickets['thursday']))
+                <x-tickets.item
+                    :title="$tickets['thursday']['name']"
+                    :price="$tickets['thursday']['price']"
+                    :rrp="$tickets['thursday']['rrp']"
+                    :description="$tickets['thursday']['description']"
+                    :features="$tickets['thursday']['features']"
+                    :href="config('variables.ticket_url')"
+                />
+            @endif
         </div>
 
         <div
             class="flex flex-1 flex-grow flex-col border-t-2 border-gray-700 lg:border-l-2 lg:border-t-0"
         >
-            <x-tickets.item
-                title="Friday Ticket"
-                price="£63"
-                rrp="£210"
-                description="Our mixed day, 3 tracks, one on development, another on business & wellbeing, and our community spotlight track"
-                :features="['Software Development' , 'Career & Wellbeing', 'Business' ]"
-                :href="config('variables.ticket_url')"
-            />
+            @if(isset($tickets['friday']))
+                <x-tickets.item
+                    :title="$tickets['friday']['name']"
+                    :price="$tickets['friday']['price']"
+                    :rrp="$tickets['friday']['rrp']"
+                    :description="$tickets['friday']['description']"
+                    :features="$tickets['friday']['features']"
+                    :href="config('variables.ticket_url')"
+                />
+            @endif
         </div>
     </div>
 
@@ -35,14 +39,16 @@
         class="col-span-3 row-start-1 flex overflow-hidden rounded-lg shadow-lg lg:col-span-1 lg:row-start-auto"
     >
         <div class="flex flex-1 flex-col">
-            <x-tickets.item
-                title="Full Ticket"
-                price="£130"
-                rrp="£300"
-                description="Access to both days, and the networking events surrounding the conference!"
-                :features="['All the things' , '+ Networking events' , '+ Wine reception'   ]"
-                :href="config('variables.ticket_url')"
-            />
+            @if(isset($tickets['full']))
+                <x-tickets.item
+                    :title="$tickets['full']['name']"
+                    :price="$tickets['full']['price']"
+                    :rrp="$tickets['full']['rrp']"
+                    :description="$tickets['full']['description']"
+                    :features="$tickets['full']['features']"
+                    :href="config('variables.ticket_url')"
+                />
+            @endif
         </div>
     </div>
 

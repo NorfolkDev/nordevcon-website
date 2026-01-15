@@ -17,10 +17,11 @@
         </div>
     </div>
 
-    <div class="px-4 pt-6 text-center text-xl text-white">
-        60% off with our 🐤 Super Early Bird tickets, available until 8th
-        September for "out-of-pocket" purchases
-    </div>
+    @if($offer)
+        <div class="px-4 pt-6 text-center text-xl text-white">
+            {{ $offer }}
+        </div>
+    @endif
 
     <x-tickets.cards />
 </div>
