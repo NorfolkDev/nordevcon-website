@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <x-schedule />
+    {{-- <x-schedule /> --}}
 
     <x-sponsors />
     <x-discord />
