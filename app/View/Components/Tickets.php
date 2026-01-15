@@ -39,9 +39,7 @@ class Tickets extends Component
             }
 
             // Calculation for limited tiers
-            $discount = 0;
-            if ($tier['rrp'] > 0) { / $tier['rrp']) * 100 / 10) * 10;
-            }
+            $discount = round((($tier['rrp'] - $tier['price']) / $tier['rrp']) * 100 / 10) * 10;
 
             $icon = match ($tier['name']) {
                 'Super Early Bird' => '🐤',
