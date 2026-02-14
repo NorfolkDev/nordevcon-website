@@ -24,7 +24,8 @@
     </div>
 </section>
 
-<div class="sticky -top-[6vw] z-40 -mb-[6vw] -mt-[6vw]">
+<div id="wave-sentinel" class="h-0"></div>
+<div id="wave-container" class="sticky -top-[6vw] z-40 -mb-[6vw] -mt-[6vw]">
     <div
         class="absolute bottom-2/3 left-0 right-0 z-50 flex overflow-hidden lg:items-end lg:justify-end"
     >
