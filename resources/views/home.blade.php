@@ -10,8 +10,9 @@
     <x-expect />
     <x-testimonials />
     <x-gallery />
-    <x-tickets />
-    <x-schedule />
+
+    {{-- <x-tickets /> --}}
+    {{-- <x-schedule /> --}}
     <x-sponsors />
     <x-discord />
     <x-newsletter />

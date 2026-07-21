@@ -29,7 +29,8 @@ class Sessionize
 
         $speakers = self::getSpeakers();
 
-        return Schedule::fromSessionize($data, $speakers);
+        // return Schedule::fromSessionize($data, $speakers);
+        return Schedule::fromSessionize([], []);
     }
 
     public static function getSpeakers(?int $ttl = 10_800): Speakers
@@ -49,6 +50,7 @@ class Sessionize
             return $response->json();
         });
 
-        return Speakers::fromSessionize($data);
+        // return Speakers::fromSessionize($data);
+        return Speakers::fromSessionize([]);
     }
 }
