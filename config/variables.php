@@ -21,7 +21,7 @@ return [
 
     'ticket_url' => 'https://ti.to/norfolkdevelopers/nordevcon-27',
 
-    'cfp_url' => 'https://sessionize.com/norfolk-developers-conference-2027',
+    'cfp_url' => 'https://sessionize.com/nordevcon-2027/',
 
     'gallery_url' => 'https://photos.app.goo.gl/RM6fmnKiHTHSLE2e6',
 
