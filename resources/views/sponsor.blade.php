@@ -25,7 +25,7 @@
             of
             <span class="text-wave-orange">nor(DEV): con</span>
             <br />
-            2026.
+            2027.
         </h1>
     </div>
 
