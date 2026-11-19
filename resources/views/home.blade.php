@@ -17,4 +17,6 @@
     <x-discord />
     <x-newsletter />
     <x-footer />
+
+    <x-offer />
 @endsection
